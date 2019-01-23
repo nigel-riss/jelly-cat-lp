@@ -1,3 +1,7 @@
-h1 {
-    color: green;
-}
+@charset 'utf-8';
+
+// base
+@import './base/normalize';
+@import './base/vars';
+@import './base/mixins';
+@import './base/global';
