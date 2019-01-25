@@ -1,0 +1,18 @@
+html {
+    // typography
+    color: $black;
+    font-size: 14px;
+}
+
+// Box sizing fix
+body {
+    // box model
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    // box model
+    box-sizing: inherit;
+}
