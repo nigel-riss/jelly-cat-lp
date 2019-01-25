@@ -1,0 +1,17 @@
+.button {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    padding: 17px 40px;
+    max-width: 280px;
+    min-width: 220px;
+
+    // typography
+    color: $light;
+    text-align: center;
+    text-decoration: none;
+
+    // visual
+    background-color: $purple;
+    border-radius: 25px;
+}

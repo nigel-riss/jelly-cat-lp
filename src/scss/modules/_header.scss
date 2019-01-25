@@ -1,0 +1,50 @@
+.header {
+    // box model
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 800px;
+    padding: 40px;
+    padding-top: 70px;
+
+    // visual
+    background-color: #eb1751;
+}
+
+.header__logo {
+    // typography
+    text-align: center;
+}
+
+.header__caption {
+    // box model
+    margin: 0 auto;
+    max-width: 490px;
+    margin-bottom: 75px;
+
+    // typography
+    text-align: center;
+}
+
+.header__title {
+    // box model
+    margin: 0;
+    margin-bottom: 80px;
+
+    // typography
+    color: $light;
+}
+
+.header__text {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $light;
+}
+
+.header__button{
+    // typography
+    text-align: center;
+}
