@@ -1,0 +1,18 @@
+.section-title {
+    // box model
+    margin: 0;
+    margin-bottom: 40px;
+
+    // typography
+    color: $crimson;
+}
+
+.section-title--light {
+    // typography
+    color: $light;
+}
+
+.section-title--purple {
+    // typography
+    color: $purple;
+}

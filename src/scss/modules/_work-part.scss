@@ -1,0 +1,39 @@
+.work-part {
+    // box model
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 280px;
+
+    // typography
+    color: $light;
+    line-height: 1.5;
+    text-align: center;
+
+    @include atTablet {
+        // box model
+        flex-basis: 45%;
+        max-width: 300px;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin: 0;
+    }
+}
+
+.work-part__percent {
+    // box model
+    display: block;
+    margin-bottom: 10px;
+    
+    // typography
+    color: $orange;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+    &--crimson {
+        // typography
+        color: $crimson;
+    }
+}

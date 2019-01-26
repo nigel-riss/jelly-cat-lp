@@ -1,0 +1,25 @@
+.who-suit {
+    // box model
+    padding: 70px 20px;
+
+    // visual
+    background-color: $purple;
+}
+
+.who-suit__header {
+    // box model
+    margin-bottom: 40px;
+
+    // typography
+    text-align: center;
+}
+
+.who-suit__content {
+    // box model
+    margin-bottom: 40px;
+}
+
+.who-suit__button {
+    // typography
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+.economy {
+    // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 800px;
+    padding: 70px 20px;
+
+    // typography
+    color: $purple;
+
+    @include atTablet {
+        // box model
+        height: auto;
+        min-height: inherit;
+        max-height: inherit;
+    }
+
+    @include atDesktopS {
+        // box model
+        padding: 120px;
+    }
+}
+
+.economy__text {
+    // box model
+    margin-bottom: 40px;
+
+    // typography
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+
+    @include atTablet {
+        // box model
+        margin: 0 auto;
+        margin-bottom: 35px;
+        width: 500px;
+
+        // typography
+        font-size: 1.25rem;
+    }
+
+    @include atDesktopS {
+        // box model
+        width: 600px;
+
+        // typography
+        font-size: 1.5rem;
+    }
+}
+
+.economy__value {
+    // box model
+    display: block;
+    margin-bottom: 20px;
+
+    // typography
+    color: $crimson;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    @include atTablet {
+        // typography
+        font-size: 4rem;
+    }
+
+    @include atDesktopS {
+        // typography
+        font-size: 5rem;
+    }
+}
+
+.economy__button {
+    // typography
+    text-align: center;
+}
