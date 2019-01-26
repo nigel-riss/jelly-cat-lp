@@ -1,0 +1,19 @@
+.quote {
+    // box model
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 200px;
+
+    // typography
+    color: $light;
+}
+
+.quote__text {
+
+}
+
+.quote__signature {
+    // typography
+    color: $crimson;
+    text-align-last: left;
+}

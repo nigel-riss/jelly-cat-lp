@@ -1,0 +1,18 @@
+.quality {
+    // box model
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    // typography
+    text-align: center;
+}
+
+.quality__icon {
+
+}
+
+.quality__title {
+    // typography
+    color: $purple;
+}

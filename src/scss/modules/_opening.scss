@@ -1,0 +1,38 @@
+.opening {
+    // box model
+    padding: 70px 20px;
+
+    // visual
+    background-color: $purple;
+
+    @include atTablet {
+        // box model
+        padding: 70px 40px;
+    }
+}
+
+.opening__header {
+    // typography
+    text-align: center;
+}
+
+.opening__content {
+    @include atTablet {
+        // box model
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 720px;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 100px 0;
+    }
+}
+
+.opening__button {
+    // typography
+    text-align: center;
+}

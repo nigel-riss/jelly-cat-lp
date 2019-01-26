@@ -1,0 +1,40 @@
+.prices {
+    // box model
+    padding: 70px 20px;
+
+    // visual
+    background-color: $crimson;
+
+    @include atDesktopS {
+        // box model
+        padding: 70px 50px;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 70px calc((100% - 1000px) / 2);
+    }
+}
+
+.prices__header {
+    // box model
+    padding: 0 10px;
+
+    // typography
+    text-align: center;
+}
+
+.prices__count {
+    // typography
+    color: $light;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.prices__buttons {
+    // typography
+    text-align: center;
+}
+.price__buy {
+    margin-bottom: 30px;
+}

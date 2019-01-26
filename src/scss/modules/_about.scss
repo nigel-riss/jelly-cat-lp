@@ -1,0 +1,49 @@
+.about {
+    // box model
+    padding: 70px 20px;
+
+    // visual
+    background-color: $purple;
+
+    @include atDesktopS {
+        // box model
+        padding: 70px 50px;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 70px calc((100% - 1100px) / 2);
+    }
+}
+
+.about__header {
+    // typography
+    text-align: center;
+}
+
+.about__quotes {
+    // box model
+    margin-bottom: 70px;
+    
+    // typography
+    text-align: center;
+}
+
+.about__content {
+    // box model
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include atTablet {
+        // box model
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include atDesktopM {
+        // box model
+        justify-content: space-between;
+    }
+}

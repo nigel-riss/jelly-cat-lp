@@ -1,0 +1,30 @@
+.ref {
+    // box model
+    margin: 10px auto;
+
+    // typography
+    text-align: center;
+
+    @include atTablet {
+        // box model
+        flex-basis: 30%;
+        margin: 10px;
+    }
+
+    @include atDesktopM {
+        // box model
+        flex-basis: auto;
+        margin: 20px;
+    }
+}
+
+.ref--spc {
+    // box model
+    margin: 30px auto;
+    margin-bottom: 20px;
+
+    @include atTablet {
+        // box model
+        margin: 10px;
+    }
+}

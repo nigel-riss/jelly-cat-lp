@@ -1,0 +1,30 @@
+.role {
+    // box model
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    // typography
+    text-align: center;
+}
+
+.role__icon {
+    
+}
+
+.role__icon img {
+    
+}
+.role__caption {
+
+}
+
+.role__title {
+    // typography
+    color: $crimson;
+}
+
+.role__desc {
+    // typography
+    color: $light;
+}

@@ -1,0 +1,43 @@
+.get-item {
+    // positioning
+    position: relative;
+
+    // box model
+    margin-bottom: 40px;
+
+    @include atTablet {
+        // box model
+        flex-basis: 47%;
+    }
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 32%;
+        padding-right: 20px;
+    }
+}
+
+.get-item__icon {
+    // positioning
+    position: absolute;
+    left: 40px;
+    top: 13px;
+
+    // box model
+    height: 20px;
+    width: 20px;
+}
+
+.get-item__icon img {
+    // box model
+    height: 100%;
+    width: 100%;
+}
+
+.get-item__desc {
+    // box model
+    padding-left: 90px;
+
+    // typography
+    color: $crimson;
+}

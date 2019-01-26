@@ -5,11 +5,10 @@
     height: 100vh;
     min-height: 500px;
     max-height: 800px;
-    padding: 40px;
-    padding-top: 70px;
+    padding: 70px 20px;
 
     // visual
-    background-color: #eb1751;
+    background-color: $crimson;
 }
 
 .header__logo {
