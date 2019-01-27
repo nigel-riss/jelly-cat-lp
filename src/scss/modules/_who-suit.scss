@@ -4,6 +4,19 @@
 
     // visual
     background-color: $purple;
+
+    @include atDesktopS {
+        // box model
+        padding: 70px;
+    }
+
+    @include atDesktopM {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 70px calc((100% - 1100px) / 2);
+    }
 }
 
 .who-suit__header {
@@ -12,14 +25,57 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        margin-bottom: 60px;
+    }
+
+    @include atDesktopS {
+        // box model
+        max-width: 360px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    @include atDesktopM {
+        // box model
+        flex-basis: 360px;
+
+        // typography
+        text-align: left;
+    }
 }
 
 .who-suit__content {
     // box model
     margin-bottom: 40px;
+
+    @include atTablet {
+        // box model
+        margin-bottom: 60px;
+    }
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    @include atDesktopM {
+        // box model
+        flex-basis: 700px;
+    }
 }
 
 .who-suit__button {
     // typography
     text-align: center;
+
+    @include atDesktopM {
+        // box model
+        width: 100%;
+    }
 }

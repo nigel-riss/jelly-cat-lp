@@ -4,11 +4,33 @@
 
     // visual
     background-color: $crimson;
+
+    @include atTablet {
+        // box model
+        padding: 70px 40px;
+    }
+
+    @include atDesktopS {
+        // box model
+        padding: 70px;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 70px calc((100% - 1100px) / 2);
+    }
 }
 
 .advantages__header {
     // typography
     text-align: center;
+
+    @include atDesktopS {
+        // box model
+        max-width: 420px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 }
 
 .advantages__content {

@@ -9,11 +9,15 @@
 }
 
 .quote__text {
-
+    // typography
+    font: 1.2rem;
+    line-height: 1.5;
 }
 
 .quote__signature {
     // typography
     color: $crimson;
+    font-size: 1.2rem;
+    font-weight: 700;
     text-align-last: left;
 }
