@@ -33,6 +33,26 @@
 
     // typography
     color: $light;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-transform: uppercase;
+
+    @include atTablet {
+        // box model
+        max-width: 600px;
+
+        // typography
+        font-size: 2.25rem;
+    }
+
+    @include atDesktopM {
+        // box model
+        max-width: 720px;
+
+        // typography
+        font-size: 2.5rem;
+    }
 }
 
 .header__text {
@@ -41,6 +61,7 @@
 
     // typography
     color: $light;
+    line-height: 1.5;
 }
 
 .header__button{

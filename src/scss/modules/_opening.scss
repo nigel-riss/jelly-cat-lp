@@ -12,6 +12,10 @@
 }
 
 .opening__header {
+    // box model
+    margin-bottom: 40px;
+    padding: 0 10px;
+    
     // typography
     text-align: center;
 }

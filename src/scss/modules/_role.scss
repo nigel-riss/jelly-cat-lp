@@ -6,14 +6,57 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // positioning
+        position: relative;
+
+        // box model
+        padding-left: 90px;
+        max-width: 400px;
+        margin-bottom: 60px;
+
+        // typography
+        text-align: left;
+    }
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 390px;
+        margin: 20px 10px;
+    }
+
+    @include atDesktopM {
+        // box model
+        flex-basis: 330px;
+    }
 }
 
 .role__icon {
-    
+    @include atTablet {
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        // box model
+        height: 60px;
+        width: 60px;
+    }
+
+    @include atDesktopS {
+        // box model
+        height: 64px;
+        width: 64px;
+    }
 }
 
 .role__icon img {
-    
+    @include atTablet {
+    // box model
+    height: 100%;
+    width: 100%;
+    }
 }
 .role__caption {
 
@@ -22,9 +65,16 @@
 .role__title {
     // typography
     color: $crimson;
+    font-size: 1.5rem;
+
+    @include atTablet {
+        // box model
+        margin-top: 0;
+    }
 }
 
 .role__desc {
     // typography
     color: $light;
+    line-height: 1.5;
 }
