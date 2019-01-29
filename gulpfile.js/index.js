@@ -68,8 +68,8 @@ let compileStyles = () => (
     .pipe(optimiseCSS())
     .pipe(gulp.dest(dirs.docs))
     .pipe(server.reload({stream: true}))
-    .pipe(rename('style.css'))
-    .pipe(gulp.dest(dirs.wp))
+    // .pipe(rename('style.css'))
+    // .pipe(gulp.dest(dirs.wp))
 );
 
 
