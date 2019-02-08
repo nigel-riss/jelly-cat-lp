@@ -31,7 +31,7 @@
 
 .footer__logo {
     // box model
-    height: 35px;
+    height: 72px;
     margin-bottom: 40px;
 
     @include atDesktopS {
@@ -48,11 +48,12 @@
 
 .footer__phone {
     // box model
-    margin-bottom: 15px;
+    display: block;
+    margin-bottom: 40px;
 
     // typography
     color: $purple;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
 
@@ -65,9 +66,11 @@
 
 .footer__contacts {
     // box model
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 
     // typography
+    font-size: 1rem;
+    font-weight: 700;
     line-height: 1.5;
 
     @include atDesktopS {
@@ -77,8 +80,9 @@
 }
 
 .footer__copy {
-    // box model
-    margin-bottom: 40px;
+    // typography
+    font-size: 1rem;
+    font-weight: 700;
 
     @include atDesktopS {
         // box model
@@ -87,7 +91,12 @@
 }
 
 .footer__policy {
+    // box model
+    display: block;
+    margin-bottom: 30px;
+
     // typography
     color: $crimson;
+    font-weight: 700;
     text-decoration: none;
 }

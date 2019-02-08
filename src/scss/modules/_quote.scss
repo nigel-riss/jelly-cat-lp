@@ -6,18 +6,53 @@
 
     // typography
     color: $light;
+    text-align: left;
 }
 
 .quote__text {
+    // positioning
+    position: relative;
+
+    // box model
+    padding-left: 1rem;
+
     // typography
-    font: 1.2rem;
+    font-size: 1.25rem;
+    font-style: italic;
     line-height: 1.5;
 }
 
+.quote__text::before,
+.quote__text::after {
+    content: "«";
+
+    // positioning
+    position: absolute;
+    top: -2rem;
+    left: -3rem;
+
+    // typography
+    color: $crimson;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.quote__text:after {
+    content: "»";
+
+    // positioning
+    top: auto;
+    left: auto;
+    bottom: -2rem;
+    right: -3rem;
+}
+
 .quote__signature {
+    // box model
+    padding-left: 1rem;
+
     // typography
     color: $crimson;
     font-size: 1.2rem;
     font-weight: 700;
-    text-align-last: left;
 }
