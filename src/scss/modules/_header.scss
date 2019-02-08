@@ -4,7 +4,7 @@
     flex-direction: column;
     height: 100vh;
     min-height: 500px;
-    max-height: 800px;
+    max-height: 600px;
     padding: 40px 20px;
 
     // visual
@@ -12,15 +12,25 @@
 }
 
 .header__logo {
+    // box model
+    height: 55px;
+    margin-bottom: 55px;
+
     // typography
     text-align: center;
+}
+
+.header__logo img {
+    // box model
+    height: 100%;
 }
 
 .header__caption {
     // box model
     margin: 0 auto;
     max-width: 490px;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
+    padding: 0 10px;
 
     // typography
     text-align: center;
@@ -29,7 +39,7 @@
 .header__title {
     // box model
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 
     // typography
     color: $light;
@@ -60,7 +70,8 @@
 
     // typography
     color: $light;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.75;
 }
 
 .header__button{

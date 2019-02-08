@@ -1,22 +1,15 @@
 .feature {
+    // positioning
+    position: relative;
+
     // box model
-    display: flex;
+    margin-bottom: 20px;
+    padding-left: 55px;
+    padding-right: 20px;
 
     // typography
     color: $light;
-
-    @include atTablet {
-        // box model
-        flex-basis: 45%;
-
-        &:nth-child(1) { order: 0; }
-        &:nth-child(2) { order: 2; }
-        &:nth-child(3) { order: 4; }
-        &:nth-child(4) { order: 6; }
-        &:nth-child(5) { order: 1; }
-        &:nth-child(6) { order: 3; }
-        &:nth-child(7) { order: 5; }
-    }
+    line-height: 1.5;
 
     @include atDesktopM {
         // box model
@@ -31,30 +24,37 @@
         &:nth-child(7) { order: 5; }
     }
 }
-//find new solution for plus icon
+
 .feature::before {
     content: "";
-    // box model
-    display: block;
-    width: 130px;
-    height: 130px;
-
-    // visual
-    background-image: url(/img/icons/plus.svg);
-    background-position: 25px 5px;
-    background-repeat: no-repeat;
 
     // positioning
     position: absolute;
+    left: 10px;
+    top: 0;
+
+    // box model
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    // visual
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.feature__desc {
-    // box model
-    padding-left: 30px;
-    width: 230px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+.feature--adv::before {
+    // visual
+    background-image: url(/img/icons/plus.svg);
+}
 
+.feature--get {
     // typography
-    line-height: 1.5;
+    color: $crimson;
+    font-weight: 500;
+    
+    &::before {
+        // visual
+        background-image: url(/img/icons/checked.svg);
+    }
 }

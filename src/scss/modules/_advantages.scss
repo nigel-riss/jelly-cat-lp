@@ -34,6 +34,9 @@
 }
 
 .advantages__content {
+    // box model
+    margin-bottom: 60px;
+
     @include atTablet {
         // box model
         display: flex;

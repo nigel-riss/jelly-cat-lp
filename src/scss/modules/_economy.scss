@@ -1,12 +1,5 @@
 .economy {
     // box model
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    min-height: 500px;
-    max-height: 800px;
     padding: 70px 20px;
 
     // typography
@@ -30,7 +23,7 @@
     margin-bottom: 40px;
 
     // typography
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
 
@@ -61,7 +54,6 @@
     // typography
     color: $crimson;
     font-size: 2.5rem;
-    font-weight: 700;
 
     @include atTablet {
         // typography

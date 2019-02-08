@@ -33,6 +33,7 @@
 .quality__title {
     // typography
     color: $purple;
+    font-size: 1.25rem;
     line-height: 1.5;
 
     @include atDesktopS {

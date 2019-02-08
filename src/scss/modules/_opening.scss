@@ -3,7 +3,7 @@
     padding: 70px 20px;
 
     // visual
-    background-color: $purple;
+    background-color: $diamond;
 
     @include atTablet {
         // box model
@@ -21,6 +21,9 @@
 }
 
 .opening__content {
+    // box model
+    margin-bottom: 60px;
+
     @include atTablet {
         // box model
         display: flex;

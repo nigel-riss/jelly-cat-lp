@@ -33,16 +33,8 @@
 }
 
 .role__icon {
-    @include atTablet {
-        // positioning
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        // box model
-        height: 60px;
-        width: 60px;
-    }
+    // box model
+    height: 71px;
 
     @include atDesktopS {
         // box model
@@ -52,12 +44,10 @@
 }
 
 .role__icon img {
-    @include atTablet {
     // box model
     height: 100%;
-    width: 100%;
-    }
 }
+
 .role__caption {
 
 }

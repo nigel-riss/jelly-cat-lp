@@ -11,13 +11,13 @@
 
 // modules
 @import './modules/header';
-@import './modules/logo';
 @import './modules/format';
 @import './modules/who-suit';
 @import './modules/role';
 @import './modules/for-you';
 @import './modules/quality';
 @import './modules/advantages';
+@import './modules/feature-list';
 @import './modules/feature';
 @import './modules/u-get';
 @import './modules/get-item';
@@ -35,5 +35,5 @@
 
 // elements
 @import './elements/button';
-@import './elements/section__title';
+@import './elements/section-title';
 @import './elements/section-subtitle';

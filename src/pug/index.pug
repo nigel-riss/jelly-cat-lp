@@ -12,11 +12,11 @@ html(lang="en")
     body
         header.header
             .header__logo
-                .logo: img(src="./img/logo-white.svg", alt="Логотип франшизы Jelly Cat")
+                img(src="./img/logo-white.svg", alt="Логотип франшизы Jelly Cat")
 
             .header__caption
                 h1.header__title Jelly Cat — франшиза интернет магазина сладостей со всего мира
-                p.header__text Яркие, вкусные, запоминающиеся, притягательные. Это выделяет нас на рынке сладостей и является весомым конкурентным преимуществом.
+                p.header__text Яркие, вкусные, запоминающиеся, притягательные. Это выделяет нас на&nbsp;рынке сладостей и является весомым конкурентным преимуществом.
 
             .header__button
                 a.button.contact-button(href="#") Узнать подробнее
@@ -24,8 +24,8 @@ html(lang="en")
 
         section.format
             header.format__header
-                h2.section-title Формат магазинов Jelly Cat
-                p.section-subtitle Jelly Cat — интернет–магазин сладостей и сладких подарков. В вашем распоряжении будут такие площадки, как: сайт–магазин, VK, Instagram, Facebook, Ok.ru
+                h2.section-title Формат магазина <br>Jelly Cat
+                p.section-subtitle Jelly Cat — интернет–магазин сладостей и&nbsp;сладких подарков. В&nbsp;вашем распоряжении будут такие площадки, как: сайт–магазин, VK, Instagram, Facebook, Ok.ru
 
 
         section.who-suit
@@ -57,12 +57,12 @@ html(lang="en")
 
         section.for-you
             header.for-you__header
-                h2.section-title Этот бизнес для Вас, если Вы:
+                h2.section-title.section-title--purple Этот бизнес для Вас, <br>если Вы:
 
             .for-you__content
                 article.quality
                     .quality__icon: img(src="./img/icons/hand.svg", alt="Иконка руки с монетой")
-                    h3.quality__title Хотите начать своё&nbsp;дело без внушительных затрат
+                    h3.quality__title Хотите начать своё&nbsp;дело без&nbsp;внушительных затрат
 
                 article.quality
                     .quality__icon: img(src="./img/icons/money.svg", alt="Иконка стопки монет")
@@ -70,46 +70,36 @@ html(lang="en")
 
                 article.quality
                     .quality__icon: img(src="./img/icons/laugh.svg", alt="Иконка смеющихся людей")
-                    h3.quality__title Любите общение с&nbsp;людьми
-
-                article.quality
-                    .quality__icon: img(src="./img/icons/family.svg", alt="Иконка семьи")
-                    h3.quality__title Хотите больше времени быть с&nbsp;семьёй и&nbsp;друзьями
+                    h3.quality__title Любите общение <br>с&nbsp;людьми
 
                 article.quality
                     .quality__icon: img(src="./img/icons/shield.svg", alt="Иконка щита")
-                    h3.quality__title Развиваетесь и&nbsp;любите узнавать новое
+                    h3.quality__title Развиваетесь и&nbsp;любите <br>узнавать новое
 
                 article.quality
                     .quality__icon: img(src="./img/icons/development.svg", alt="Иконка графика")
-                    h3.quality__title Несёте ответственность за&nbsp;свою жизнь
+                    h3.quality__title Несёте ответственность <br>за&nbsp;свою жизнь
 
 
         section.advantages
             header.advantages__header
-                h2.section-title.section-title--light Преимущества Jelly Cat
+                h2.section-title.section-title--light Преимущества <br>Jelly Cat
 
             .advantages__content
-                article.feature
-                    p.feature__desc 1 месяц на&nbsp;полную окупаемость и&nbsp;выход на&nbsp;прибыль
+                ul.feature-list
+                    li.feature.feature--adv <strong>1 месяц на&nbsp;полную окупаемость и&nbsp;выход на&nbsp;прибыль</strong>
 
-                article.feature
-                    p.feature__desc Опыт основателей в&nbsp;бизнесе 10&nbsp;лет
+                    li.feature.feature--adv Опыт основателей в&nbsp;бизнесе более 10&nbsp;лет
 
-                article.feature
-                    p.feature__desc Обучающая информация и&nbsp;брендбук компании — 1&nbsp;час работы в день, можно совмещать с&nbsp;учёбой и&nbsp;работой
+                    li.feature.feature--adv Обучающая информация и&nbsp;брендбук компании — 1&nbsp;час работы в день, можно совмещать с&nbsp;учёбой и&nbsp;работой
 
-                article.feature
-                    p.feature__desc Быстрая поддержка по&nbsp;любым вопросам
+                    li.feature.feature--adv Быстрая поддержка по&nbsp;любым вопросам
 
-                article.feature
-                    p.feature__desc Постоянно обновляющийся каталог качественной продукции от&nbsp;производителя
+                    li.feature.feature--adv Постоянно обновляющийся каталог качественной продукции от&nbsp;производителя
 
-                article.feature
-                    p.feature__desc Отлаженная и&nbsp;быстрая логистика. Приём заказов круглосуточно
+                    li.feature.feature--adv Отлаженная и&nbsp;быстрая логистика. Приём заказов круглосуточно
 
-                article.feature
-                    p.feature__desc Доход позволит Вам нанять менеджера и&nbsp;только забирать деньги с&nbsp;бизнеса, бизнес станет для&nbsp;Вас пассивным заработком
+                    li.feature.feature--adv Доход позволит Вам нанять менеджера и&nbsp;только забирать деньги с&nbsp;бизнеса, бизнес станет для&nbsp;Вас пассивным заработком
 
             .advantages__button
                 a.button.contact-button(href="#") Узнать подробнее
@@ -120,24 +110,24 @@ html(lang="en")
                 h2.section-title.section-title--purple Что вы получите после приобретения франшизы
 
             .u-get__content
-                ul.get-list
-                    li.get-list__item Готовую бизнес–модель&nbsp;с доходом от 50&nbsp;000 рублей в&nbsp;месяц
+                ul.feature-list
+                    li.feature.feature--get Готовую бизнес–модель с&nbsp;доходностью от&nbsp;50&nbsp;000₽ в&nbsp;месяц
 
-                    li.get-list__item Обучающие материалы и поддержку 24/7
+                    li.feature.feature--get Обучающие материалы и поддержку 24/7
 
-                    li.get-list__item Продвижение от профессионалов в Instagram. В холдинг JAST входит федеральная сеть маркетинговых агентств
+                    li.feature.feature--get Продвижение от профессионалов в Instagram. В холдинг JAST входит федеральная сеть маркетинговых агентств
 
-                    li.get-list__item Фирменный стиль компании, логотипы, визитки, каталоги продукции
+                    li.feature.feature--get Фирменный стиль компании, логотипы, визитки, каталоги продукции
 
-                    li.get-list__item Бесплатная и быстрая доставка товара через ответственного менеджера по закупкам
+                    li.feature.feature--get Бесплатная и быстрая доставка товара через ответственного менеджера по закупкам
 
-                    li.get-list__item Персональный менеджер, который решит любую проблему в любое время суток
+                    li.feature.feature--get Персональный менеджер, который решит любую проблему в любое время суток
 
-                    li.get-list__item Доступ к огромному ассортименту сладостей + постоянное пополнение
+                    li.feature.feature--get Доступ к огромному ассортименту сладостей + постоянное пополнение
 
-                    li.get-list__item Скрипты ведения переговоров
+                    li.feature.feature--get Скрипты ведения переговоров
 
-                    li.get-list__item Маркетинговая поддержка, привлечение целевых пользователей, настройка рекламных кампаний
+                    li.feature.feature--get Маркетинговая поддержка, привлечение целевых пользователей, настройка рекламных кампаний
 
 
         section.opening
@@ -154,7 +144,7 @@ html(lang="en")
 
 
         section.economy
-            p.economy__text <span class="economy__value">до 700&nbsp;000 ₽</span> вы сможете заработать за год, работая с нами
+            p.economy__text <span class="economy__value">до <strong>700&nbsp;000</strong> ₽</span> вы сможете заработать за&nbsp;год, работая с нами
 
             .economy__button
                 a.button.contact-button.button--red(href="#") Начать зарабатывать
@@ -162,12 +152,12 @@ html(lang="en")
 
         section.prices
             header.prices__header
-                h2.section-title.section-title--light Стоимость франшизы
+                h2.section-title.section-title--light Стоимость <br>франшизы
 
-            p.prices__count 100&nbsp;000 ₽
+            p.prices__count <strong>100&nbsp;000</strong> ₽
 
             .prices__buttons
-                a.price__buy.button.contact-button(href="#") Купить в кредит
+                a.button.contact-button(href="#") Купить в кредит
                 a.button.contact-button(href="#") Купить
 
 
