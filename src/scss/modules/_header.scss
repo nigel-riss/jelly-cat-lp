@@ -1,4 +1,7 @@
 .header {
+    // positioning
+    position: relative;
+
     // box model
     display: flex;
     flex-direction: column;
@@ -9,6 +12,26 @@
 
     // visual
     background-color: $crimson;
+}
+
+.header::after {
+    content: '';
+
+    // positioning
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+    right: 0;
+
+    // box model
+    height: 162px;
+    width: 100%;
+
+    // visual
+    background-image: url('./img/bgs/header-bottom.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .header__logo {

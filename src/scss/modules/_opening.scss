@@ -1,6 +1,9 @@
 .opening {
+    // positioning
+    position: relative;
+
     // box model
-    padding: 70px 20px;
+    padding: 40px 20px;
 
     // visual
     background-color: $diamond;
@@ -9,6 +12,47 @@
         // box model
         padding: 70px 40px;
     }
+}
+
+
+.opening::before {
+    content: '';
+
+    // positioning
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+
+    // box model
+    height: 82px;
+    width: 100%;
+
+    // visual
+    background-image: url('./img/bgs/opening-top.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.opening::after {
+    content: '';
+
+    // positioning
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+
+    // box model
+    height: 82px;
+    width: 100%;
+
+    // visual
+    background-image: url('./img/bgs/opening-bottom.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .opening__header {
