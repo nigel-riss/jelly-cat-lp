@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
+    padding-bottom: 160px;
 
     // visual
     background-color: $crimson;
@@ -117,4 +118,20 @@
 .header__button{
     // typography
     text-align: center;
+}
+
+// decorations
+
+.header__deco {
+    // positioning
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    // box model
+    height: 100%;
+    width: 100%;
 }
