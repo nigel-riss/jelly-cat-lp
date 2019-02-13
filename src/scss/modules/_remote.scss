@@ -2,6 +2,12 @@
     // box model
     padding: 160px 20px;
     padding-bottom: 300px;
+
+    @include atTablet {
+        // box model
+        padding: 260px 80px;
+        padding-bottom: 300px;
+    }
 }
 
 .remote__header {
@@ -10,6 +16,11 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        margin-bottom: 60px;
+    }
 }
 
 .remote__button {

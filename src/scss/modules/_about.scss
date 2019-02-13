@@ -9,9 +9,10 @@
     // visual
     background-color: $purple;
 
-    @include atDesktopS {
+    @include atTablet {
         // box model
-        padding: 70px 50px;
+        padding: 80px;
+        padding-top: 20px;
     }
 
     @include atDesktopM {
@@ -43,6 +44,11 @@
 .about__header {
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        margin-bottom: 80px;
+    }
 }
 
 .about__quotes {

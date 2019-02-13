@@ -6,6 +6,11 @@
     color: $purple;
     text-align: center;
 
+    @include atTablet {
+        // box model
+        padding: 50px 40px;
+    }
+
     @include atDesktopS {
         // box model
         padding: 70px 50px;
@@ -15,17 +20,20 @@
 }
 
 .footer__content {
-    @include atDesktopS {
-        // typography
+    @include atTablet {
+        // box model
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }
 
 .footer__legals {
-    @include atDesktopS {
-        // typography
-        text-align: right;
+    @include atTablet {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 }
 
@@ -36,6 +44,7 @@
 
     @include atDesktopS {
         // box model
+        flex-basis: 32%;
         margin-bottom: 0;
         margin-right: 40px;
     }
@@ -57,10 +66,14 @@
     font-weight: 500;
     text-decoration: none;
 
-    @include atDesktopS {
+    @include atTablet {
         // box model
-        margin-bottom: 0;
-        margin-right: 40px;
+        flex-basis: 32%;
+        order: 1;
+    
+        // typography
+        font-weight: 700;
+        text-align: right;
     }
 }
 
@@ -73,8 +86,14 @@
     font-weight: 700;
     line-height: 1.5;
 
-    @include atDesktopS {
+    @include atTablet {
+        // box model
+        flex-basis: 32%;
+        order: 2;
+        margin-top: 0;
+
         // typography
+        font-size: 1.125rem;
         text-align: left;
     }
 }
@@ -84,9 +103,15 @@
     font-size: 1rem;
     font-weight: 700;
 
-    @include atDesktopS {
+    @include atTablet {
         // box model
-        margin-bottom: 20px;
+        flex-basis: 31%;
+        order: 0;
+        margin-bottom: 0;
+
+        // typography
+        font-size: 1.125rem;
+        text-align-last: left;
     }
 }
 
@@ -99,4 +124,15 @@
     color: $crimson;
     font-weight: 700;
     text-decoration: none;
+
+    @include atTablet {
+        // box model
+        flex-basis: 31%;
+        order: 1;
+        margin-bottom: 0;
+
+        // typography
+        font-size: 1.125rem;
+        text-align: right;
+    }
 }

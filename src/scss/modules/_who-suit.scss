@@ -96,7 +96,10 @@
 
     @include atTablet {
         // box model
-        margin-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 10px;
     }
 
     @include atDesktopS {

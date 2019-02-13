@@ -30,19 +30,7 @@
     @include atTablet {
         // box model
         margin: 0 auto;
-        margin-bottom: 35px;
-        width: 500px;
-
-        // typography
-        font-size: 1.25rem;
-    }
-
-    @include atDesktopS {
-        // box model
-        width: 600px;
-
-        // typography
-        font-size: 1.5rem;
+        margin-bottom: 50px;
     }
 }
 
@@ -56,11 +44,9 @@
     font-size: 2.5rem;
 
     @include atTablet {
-        // typography
-        font-size: 4rem;
-    }
+        // box model
+        margin-bottom: 40px;
 
-    @include atDesktopS {
         // typography
         font-size: 5rem;
     }

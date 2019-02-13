@@ -74,7 +74,8 @@
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
-        max-width: 720px;
+        margin-bottom: 100px;
+        max-width: 600px;
     }
 
     @include atDesktopM {

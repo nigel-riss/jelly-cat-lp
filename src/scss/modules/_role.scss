@@ -12,12 +12,8 @@
         position: relative;
 
         // box model
-        padding-left: 90px;
-        max-width: 400px;
+        max-width: 260px;
         margin-bottom: 60px;
-
-        // typography
-        text-align: left;
     }
 
     @include atDesktopS {
@@ -36,20 +32,16 @@
     // box model
     height: 71px;
 
-    @include atDesktopS {
+    @include atTablet {
         // box model
-        height: 64px;
-        width: 64px;
+        height: 105px;
+        margin-bottom: 30px;
     }
 }
 
 .role__icon img {
     // box model
     height: 100%;
-}
-
-.role__caption {
-
 }
 
 .role__title {
@@ -60,6 +52,9 @@
     @include atTablet {
         // box model
         margin-top: 0;
+
+        // typography
+        font-size: 1.75rem;
     }
 }
 

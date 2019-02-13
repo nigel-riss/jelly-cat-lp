@@ -7,6 +7,11 @@
     // typography
     color: $light;
     text-align: left;
+
+    @include atTablet {
+        // box model
+        width: 330px;
+    }
 }
 
 .quote__text {
@@ -20,6 +25,11 @@
     font-size: 1.25rem;
     font-style: italic;
     line-height: 1.5;
+
+    @include atTablet {
+        // typography
+        font-size: 1.35rem;
+    }
 }
 
 .quote__text::before,
@@ -55,4 +65,9 @@
     color: $crimson;
     font-size: 1.2rem;
     font-weight: 700;
+
+    @include atTablet {
+        // typography
+        font-size: 1.35rem;
+    }
 }

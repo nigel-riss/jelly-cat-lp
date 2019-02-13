@@ -3,8 +3,7 @@
     display: inline-block;
     vertical-align: top;
     padding: 17px 40px;
-    max-width: 280px;
-    min-width: 260px;
+    width: 260px;
     margin-bottom: 20px;
 
     // typography
@@ -19,11 +18,25 @@
     border-radius: 25px;
     box-shadow: 0 5px 20px 0 rgba($dark, 0.3);
 
+    @include atTablet {
+        // box model
+        width: 330px;
+
+        // typography
+        font-size: 1.35rem;
+    }
+
     @include atDesktopS {
         // box model
         min-width: 280px;
         max-width: inherit;
     }
+}
+
+.button--260 {
+    // box model
+    width: 260px;
+    margin: 0 20px;
 }
 
 .button--red {
