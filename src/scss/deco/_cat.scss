@@ -1,0 +1,53 @@
+.cat {
+    // positioning
+    position: absolute;
+
+    // visual
+    // border: 1px solid green;
+
+    // visual
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cat--sml-1 {
+    // positioning
+    transform: rotate(35deg);
+    left: 197px;
+    top: 660px;
+
+    // box model
+    height: 81px;
+    width: 62px;
+
+    // visual
+    background-image: url(./img/deco/cat-small-r.svg);
+}
+
+.cat--slp-1 {
+    // positioning
+    transform: rotate(-70deg);
+    left: 43px;
+    top: 510px;
+
+    // box model
+    height: 190px;
+    width: 190px;
+
+    // visual
+    background-image: url(./img/deco/cat-sleep-r.svg);
+}
+
+.cat--pur-1 {
+    // positioning
+    left: 40px;
+    top: 580px;
+    z-index: 2;
+
+    // box model
+    height: 205px;
+    width: 190px;
+
+    // visual
+    background-image: url(./img/deco/cat-purple.svg);
+}

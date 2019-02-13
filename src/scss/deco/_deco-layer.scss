@@ -1,0 +1,23 @@
+.deco-layer {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    // box model
+    height: 100%;
+    width: 320px;
+}
+
+.deco-layer--dots {
+
+}
+
+.deco-layer--images {
+
+}
+
+.deco-layer--blobs {
+
+}

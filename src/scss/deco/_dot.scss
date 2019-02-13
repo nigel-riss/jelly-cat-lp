@@ -1,0 +1,40 @@
+.dot {
+    // positioning
+    position: absolute;
+
+    // visual
+    border-radius: 50%;
+}
+
+.dot--s {
+    // box model
+    height: 7px;
+    width: 7px;
+}
+
+.dot--m {
+    // box model
+    height: 14px;
+    width: 14px;
+}
+
+.dot--l {
+    // box model
+    height: 19px;
+    width: 19px;
+}
+
+.dot--org {
+    // visual
+    background-color: $orange;
+}
+
+.dot--red {
+    // visual
+    background-color: $crimson;
+}
+
+.dot--pug {
+    // visual
+    
+}
