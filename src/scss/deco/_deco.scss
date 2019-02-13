@@ -1,0 +1,63 @@
+.deco {
+    // positioning
+    position: absolute;
+
+    // visual
+    // border: 1px solid green;
+
+    // visual
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.deco--ok {
+    // positioning
+    left: 80px;
+    top: 200px;
+
+    // box model
+    height: 72px;
+    width: 45px;
+
+    // visual
+    background-image: url('./img/deco/ok.svg');
+}
+
+.deco--fb {
+    // positioning
+    left: 252px;
+    top: 280px;
+
+    // box model
+    height: 90px;
+    width: 48px;
+
+    // visual
+    background-image: url('./img/deco/facebook.svg');
+}
+
+.deco--vk {
+    // positioning
+    left: 179px;
+    top: 660px;
+
+    // box model
+    height: 53px;
+    width: 93px;
+
+    // visual
+    background-image: url('./img/deco/vk.svg');
+}
+
+.deco--inst {
+    // positioning
+    left: 20px;
+    top: 700px;
+
+    // box model
+    height: 72px;
+    width: 72px;
+
+    // visual
+    background-image: url('./img/deco/instagram.svg');
+}
