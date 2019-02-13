@@ -11,13 +11,16 @@
 }
 
 .deco-layer--dots {
-
+    // positioning
+    z-index: 4;
 }
 
 .deco-layer--images {
-
+    // positioning
+    z-index: 3;
 }
 
 .deco-layer--blobs {
-
+    // positioning
+    z-index: 2;
 }

@@ -1,0 +1,43 @@
+.blob {
+    // positioning
+    position: absolute;
+
+    // visual
+    // border: 1px solid green;
+
+    // visual
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.blob--1 {
+    // positioning
+    transform: rotate(-45deg);
+    left: 95px;
+    top: 570px;
+
+    // box model
+    height: 149px;
+    width: 226px;
+
+    // visual
+    background-image: url('./img/deco/blob-1.svg');
+}
+
+.blob--2 {
+    // positioning
+    left: 45px;
+    top: 480px;
+
+    // box model
+    height: 86px;
+    width: 133px;
+
+    // visual
+    background-image: url('./img/deco/blob-2.svg');
+}
+
+.blob--3 {
+    // visual
+    background-image: url('./img/deco/blob-3.svg');
+}
