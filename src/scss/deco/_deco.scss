@@ -25,7 +25,7 @@
 
 .deco--fb {
     // positioning
-    right: 60px;
+    right: 50px;
     top: 280px;
 
     // box model
@@ -39,7 +39,7 @@
 .deco--vk {
     // positioning
     // left: 179px;
-    right: 60px;
+    right: 30px;
     top: 660px;
 
     // box model
@@ -115,15 +115,41 @@
     background-image: url('./img/deco/bean-4.png');
 }
 
-.deco--bean {
+.deco--bean-5 {
     // positioning
-    left: 20px;
-    top: 700px;
+    right: -50px;
+    top: 730px;
 
     // box model
-    height: 72px;
-    width: 72px;
+    height: 130px;
+    width: 130px;
 
     // visual
-    background-image: url('./img/deco/bean-1.png');
+    background-image: url('./img/deco/bean-3.png');
+}
+
+.deco--choops-1 {
+    // positioning
+    right: -30px;
+    top: -125px;
+
+    // box model
+    height: 270px;
+    width: 190px;
+
+    // visual
+    background-image: url('./img/deco/choops-1.png');
+}
+
+.deco--choops-2 {
+    // positioning
+    left: -1px;
+    top: 800px;
+
+    // box model
+    height: 295px;
+    width: 220px;
+
+    // visual
+    background-image: url('./img/deco/choops-2.png');
 }

@@ -45,12 +45,25 @@
 
 .blob--4 {
     // positioning
-    left: 95px;
-    top: 570px;
+    right: 10px;
+    top: -40px;
 
     // box model
     height: 81px;
     width: 125px;
+
+    // visual
+    background-image: url('./img/deco/blob-1.svg');
+}
+
+.blob--5 {
+    // positioning
+    left: 43px;
+    top: 780px;
+
+    // box model
+    height: 69px;
+    width: 110px;
 
     // visual
     background-image: url('./img/deco/blob-1.svg');
