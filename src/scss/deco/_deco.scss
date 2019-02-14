@@ -128,6 +128,32 @@
     background-image: url('./img/deco/bean-3.png');
 }
 
+.deco--bean-6 {
+    // positioning
+    left: -20px;
+    top: -80px;
+
+    // box model
+    height: 150px;
+    width: 150px;
+
+    // visual
+    background-image: url('./img/deco/bean-5.png');
+}
+
+.deco--bean-7 {
+    // positioning
+    right: -1px;
+    top: -160px;
+
+    // box model
+    height: 140px;
+    width: 78px;
+
+    // visual
+    background-image: url('./img/deco/bean-6.png');
+}
+
 .deco--choops-1 {
     // positioning
     right: -30px;
@@ -152,4 +178,17 @@
 
     // visual
     background-image: url('./img/deco/choops-2.png');
+}
+
+.deco--candy-1 {
+    // positioning
+    right: -1px;
+    top: 600px;
+
+    // box model
+    height: 295px;
+    width: 180px;
+
+    // visual
+    background-image: url('./img/deco/candy-1.png');
 }

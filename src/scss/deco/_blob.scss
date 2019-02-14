@@ -68,3 +68,31 @@
     // visual
     background-image: url('./img/deco/blob-1.svg');
 }
+
+.blob--6 {
+    // positioning
+    transform: rotate(-60deg);
+    right: -20px;
+    top: -130px;
+
+    // box model
+    height: 110px;
+    width: 110px;
+
+    // visual
+    background-image: url('./img/deco/blob-3.svg');
+}
+
+.blob--7 {
+    // positioning
+    transform: rotate(-50deg);
+    right: 10px;
+    top: 640px;
+
+    // box model
+    height: 160px;
+    width: 160px;
+
+    // visual
+    background-image: url('./img/deco/blob-1.svg');
+}
