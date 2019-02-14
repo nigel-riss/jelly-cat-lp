@@ -45,7 +45,7 @@
 
 .feature--adv::before {
     // visual
-    background-image: url(/img/icons/plus.svg);
+    background-image: url('./img/icons/plus.svg');
 }
 
 .feature--get {
@@ -55,6 +55,6 @@
     
     &::before {
         // visual
-        background-image: url(/img/icons/checked.svg);
+        background-image: url('./img/icons/checked.svg');
     }
 }
