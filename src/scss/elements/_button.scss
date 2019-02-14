@@ -35,8 +35,11 @@
 
 .button--260 {
     // box model
-    width: 260px;
-    margin: 0 20px;
+    display: block;
+    width: auto;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .button--red {

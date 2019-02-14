@@ -29,6 +29,7 @@
     top: -100px;
     left: 0;
     right: 0;
+    z-index: 7;
 
     // box model
     height: 102px;
@@ -76,4 +77,20 @@
         // box model
         justify-content: space-between;
     }
+}
+
+// decorations
+
+.about__deco {
+    // positioning
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    // box model
+    height: 100%;
+    width: 100%;
 }

@@ -154,6 +154,19 @@
     background-image: url('./img/deco/bean-6.png');
 }
 
+.deco--bean-8 {
+    // positioning
+    right: -100px;
+    top: 320px;
+
+    // box model
+    height: 200px;
+    width: 200px;
+
+    // visual
+    background-image: url('./img/deco/bean-5.png');
+}
+
 .deco--choops-1 {
     // positioning
     right: -30px;
@@ -191,4 +204,17 @@
 
     // visual
     background-image: url('./img/deco/candy-1.png');
+}
+
+.deco--candy-2 {
+    // positioning
+    left: -1px;
+    top: -200px;
+
+    // box model
+    height: 225px;
+    width: 180px;
+
+    // visual
+    background-image: url('./img/deco/candy-2.png');
 }

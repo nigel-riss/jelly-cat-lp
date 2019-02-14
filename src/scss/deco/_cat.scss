@@ -51,3 +51,31 @@
     // visual
     background-image: url(./img/deco/cat-purple.svg);
 }
+
+.cat--slp-2 {
+    // positioning
+    left: 20px;
+    top: -220px;
+    z-index: 1;
+
+    // box model
+    height: 190px;
+    width: 190px;
+
+    // visual
+    background-image: url(./img/deco/cat-sleep.svg);
+}
+
+.cat--pur-2 {
+    // positioning
+    right: 20px;
+    top: -260px;
+    z-index: 2;
+
+    // box model
+    height: 235px;
+    width: 220px;
+
+    // visual
+    background-image: url(./img/deco/cat-purple-r.svg);
+}
