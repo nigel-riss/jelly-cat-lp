@@ -24,6 +24,12 @@
     width: 19px;
 }
 
+.dot--xl {
+    // box model
+    height: 35px;
+    width: 35px;
+}
+
 .dot--org {
     // visual
     background-color: $orange;
@@ -85,4 +91,10 @@
     // positioning
     left: 135px;
     top: 800px;
+}
+
+.dot--9 {
+    // positioning
+    left: 255px;
+    top: -75px;
 }

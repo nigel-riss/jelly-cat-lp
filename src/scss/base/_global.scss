@@ -1,8 +1,16 @@
 html {
+    // positioning
+    position: relative;
+    height: 100%;
+
     // typography
     color: $dark;
     font-family: 'Montserrat', 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 12px;
+
+    // visual
+    overflow-x: hidden;
+    -webkit-overflow-scrolling:touch;
 }
 
 // Box sizing fix

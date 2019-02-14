@@ -4,6 +4,7 @@
 
     // box model
     padding: 10px 20px;
+    padding-bottom: 40px;
 
     // visual
     background-color: $purple;
@@ -124,4 +125,20 @@
         // box model
         width: 100%;
     }
+}
+
+// decorations
+
+.who-suit__deco {
+    // positioning
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    // box model
+    height: 100%;
+    width: 100%;
 }
