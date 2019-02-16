@@ -10,18 +10,36 @@
     // box model
     height: 7px;
     width: 7px;
+
+    @include atTablet {
+        // box model
+        height: 11px;
+        width: 11px;
+    }
 }
 
 .dot--m {
     // box model
     height: 14px;
     width: 14px;
+
+    @include atTablet {
+        // box model
+        height: 19px;
+        width: 19px;
+    }
 }
 
 .dot--l {
     // box model
     height: 19px;
     width: 19px;
+
+    @include atTablet {
+        // box model
+        height: 28px;
+        width: 28px;
+    }
 }
 
 .dot--xl {
@@ -49,24 +67,48 @@
     // positioning
     left: 13px;
     top: 515px;
+
+    @include atTablet {
+        // positioning
+        left: 30px;
+        top: 700px;
+    }
 }
 
 .dot--2 {
     // positioning
     left: 50px;
     top: 738px;
+
+    @include atTablet {
+        // positioning
+        left: 65px;
+        top: 1060px;
+    }
 }
 
 .dot--3 {
     // positioning
     left: 232px;
     top: 527px;
+
+    @include atTablet {
+        // positioning
+        left: 360px;
+        top: 730px;
+    }
 }
 
 .dot--4 {
     // positioning
     left: 250px;
     top: 763px;
+
+    @include atTablet {
+        // positioning
+        left: 380px;
+        top: 1092px;
+    }
 }
 
 .dot--5 {

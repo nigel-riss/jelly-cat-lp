@@ -22,6 +22,16 @@
 
     // visual
     background-image: url('./img/deco/blob-1.svg');
+
+    @include atTablet {
+        // positioning
+        left: 135px;
+        top: 800px;
+
+        // box model
+        height: 236px;
+        width: 358px;
+    }
 }
 
 .blob--2 {
@@ -35,11 +45,39 @@
 
     // visual
     background-image: url('./img/deco/blob-2.svg');
+
+    @include atTablet {
+        // positioning
+        left: 80px;
+        top: 650px;
+
+        // box model
+        height: 122px;
+        width: 189px;
+    }
 }
 
 .blob--3 {
+    // positioning
+    left: 90px;
+    top: 600px;
+
+    // box model
+    width: 79px;
+    height: 140px;
+
     // visual
-    background-image: url('./img/deco/blob-3.svg');
+    background-image: url('./img/deco/blob-4.svg');
+
+    @include atTablet {
+        // positioning
+        left: 125px;
+        top: 855px;
+
+        // box model
+        width: 125px;
+        height: 221px;
+    }
 }
 
 

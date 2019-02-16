@@ -22,6 +22,16 @@
 
     // visual
     background-image: url(./img/deco/cat-small-r.svg);
+
+    @include atTablet {
+        // positioning
+        left: 305px;
+        top: 955px;
+
+        // box model
+        height: 128px;
+        width: 98px;
+    }
 }
 
 .cat--slp-1 {
@@ -36,6 +46,16 @@
 
     // visual
     background-image: url(./img/deco/cat-sleep-r.svg);
+
+    @include atTablet {
+        // positioning
+        left: 50px;
+        top: 700px;
+
+        // box model
+        height: 320px;
+        width: 320px;
+    }
 }
 
 .cat--pur-1 {
@@ -50,6 +70,16 @@
 
     // visual
     background-image: url(./img/deco/cat-purple.svg);
+
+    @include atTablet {
+        // positioning
+        left: 50px;
+        top: 825px;
+
+        // box model
+        height: 310px;
+        width: 310px;
+    }
 }
 
 .cat--slp-2 {
