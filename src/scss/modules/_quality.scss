@@ -9,8 +9,11 @@
 
     @include atTablet {
         // box model
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         flex-basis: 25%;
-        margin: 20px 10px;
+        margin: 20px;
     }
 
     @include atDesktopM {

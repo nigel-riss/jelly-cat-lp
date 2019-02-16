@@ -196,6 +196,16 @@
 
     // visual
     background-image: url('./img/deco/bean-3.png');
+
+    @include atTablet {
+        // positioning
+        right: -40px;
+        top: 960px;
+
+        // box model
+        height: 240px;
+        width: 240px;
+    }
 }
 
 .deco--bean-6 {
@@ -248,6 +258,17 @@
 
     // visual
     background-image: url('./img/deco/choops-1.png');
+
+    @include atTablet {
+        // positioning
+        right: -1px;
+        top: -240px;
+        
+        // box model
+        height: 540px;
+        width: 386px;
+        border: 1px solid green;
+    }
 }
 
 .deco--choops-2 {
@@ -261,6 +282,15 @@
 
     // visual
     background-image: url('./img/deco/choops-2.png');
+
+    @include atTablet {
+        // positioning
+        top: 640px;
+
+        // box model
+        height: 440px;
+        width: 360px;
+    }
 }
 
 .deco--candy-1 {

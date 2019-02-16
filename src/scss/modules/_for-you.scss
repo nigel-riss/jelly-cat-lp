@@ -5,6 +5,7 @@
     @include atTablet {
         // box model
         padding: 160px 80px;
+        padding-bottom: 200px;
     }
 
     @include atDesktopS {

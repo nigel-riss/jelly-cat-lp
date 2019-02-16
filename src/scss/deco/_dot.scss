@@ -46,6 +46,12 @@
     // box model
     height: 35px;
     width: 35px;
+
+    @include atTablet {
+        // box model
+        height: 48px;
+        width: 48px;
+    }
 }
 
 .dot--org {
@@ -170,18 +176,35 @@
     // positioning
     left: -25px;
     top: -95px;
+
+    @include atTablet {
+        // positioning
+        left: 160px;
+        top: -100px;
+    }
 }
 
 .dot--11 {
     // positioning
     right: 25px;
     top: 140px;
+
+    @include atTablet {
+        right: 80px;
+        top: 280px;
+    }
 }
 
 .dot--12 {
     // positioning
     left: 40px;
     top: 770px;
+
+    @include atTablet {
+        // positioning
+        left: 140px;
+        top: 940px;
+    }
 }
 
 .dot--13 {
