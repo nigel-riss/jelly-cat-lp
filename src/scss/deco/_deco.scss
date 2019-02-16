@@ -109,6 +109,15 @@
 
     // visual
     background-image: url('./img/deco/bean-1.png');
+
+    @include atTablet {
+        // positioning
+        left: 40px;
+
+        // box model
+        width: 220px;
+        height: 220px;
+    }
 }
 
 .deco--bean-2 {
@@ -122,6 +131,12 @@
 
     // visual
     background-image: url('./img/deco/bean-2.png');
+
+    @include atTablet {
+        // positioning
+        right: -30px;
+        top: 40px;
+    }
 }
 
 .deco--bean-3 {
@@ -135,6 +150,16 @@
 
     // visual
     background-image: url('./img/deco/bean-3.png');
+
+    @include atTablet {
+        // positioning
+        left: 45px;
+        top: 700px;
+
+        // box model
+        height: 120px;
+        width: 120px;
+    }
 }
 
 .deco--bean-4 {
@@ -148,6 +173,16 @@
 
     // visual
     background-image: url('./img/deco/bean-4.png');
+
+    @include atTablet {
+        // positioning
+        right: -20px;
+        top: 900px;
+
+        // box model
+        height: 150px;
+        width: 150px;
+    }
 }
 
 .deco--bean-5 {
