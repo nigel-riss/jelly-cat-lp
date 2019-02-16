@@ -10,3 +10,10 @@
         width: 330px;
     }
 }
+
+.feature-list--get {
+    @include atTablet {
+        // box model
+        width: 360px;
+    }
+}

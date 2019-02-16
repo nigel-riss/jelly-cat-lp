@@ -224,3 +224,29 @@
     left: 45px;
     top: 300px;
 }
+
+@include atTablet {
+    .dot--101 {
+        // positioning
+        left: 40px;
+        top: 260px;
+    }
+
+    .dot--102 {
+        // positioning
+        right: 80px;
+        top: 360px;
+    }
+
+    .dot--103 {
+        // positioning
+        left: 80px;
+        bottom: 300px;
+    }
+
+    .dot--104 {
+        // positioning
+        right: 400px;
+        bottom: 140px;
+    }
+}

@@ -1,4 +1,7 @@
 .u-get {
+    // positioning
+    position: relative;
+
     // box model
     padding: 180px 20px;
 
@@ -46,4 +49,21 @@
         flex-wrap: wrap;
         padding: 0;
     }
+}
+
+
+// decorations
+
+.u-get__deco {
+    // positioning
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    // box model
+    height: 100%;
+    width: 100%;
 }
