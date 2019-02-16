@@ -9,7 +9,6 @@ html {
     font-size: 12px;
 
     // visual
-    overflow-x: hidden;
     -webkit-overflow-scrolling:touch;
 }
 
@@ -17,6 +16,11 @@ html {
 body {
     // box model
     box-sizing: border-box;
+}
+
+main {
+    // visual
+    overflow: hidden;
 }
 
 *,
