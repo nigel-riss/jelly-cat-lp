@@ -1,4 +1,8 @@
 .button {
+    // positioning
+    position: relative;
+    z-index: 20;
+
     // box model
     display: inline-block;
     vertical-align: top;
@@ -40,6 +44,11 @@
     max-width: 260px;
     margin: 0 auto;
     margin-bottom: 20px;
+
+    @include atTablet {
+        // box model
+        width: 240px;
+    }
 }
 
 .button--red {

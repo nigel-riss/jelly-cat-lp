@@ -256,7 +256,7 @@
 .deco--bean-8 {
     // positioning
     right: -100px;
-    top: 320px;
+    bottom: -200px;
 
     // box model
     height: 200px;
@@ -264,6 +264,16 @@
 
     // visual
     background-image: url('./img/deco/bean-5.png');
+
+    @include atTablet {
+        // positioning
+        right: -120px;
+        bottom: -280px;
+
+        // box model
+        height: 320px;
+        width: 320px;
+    }
 }
 
 .deco--choops-1 {
@@ -347,4 +357,13 @@
 
     // visual
     background-image: url('./img/deco/candy-2.png');
+
+    @include atTablet {
+        // positioning
+        top: -330px;
+
+        // box model
+        height: 520px;
+        width: 300px;
+    }
 }

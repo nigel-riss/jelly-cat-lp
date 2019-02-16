@@ -228,12 +228,24 @@
     // positioning
     right: -15px;
     top: -80px;
+
+    @include atTablet {
+        // positioning
+        right: 75px;
+        top: -70px;
+    }
 }
 
 .dot--15 {
     // positioning
     left: 45px;
-    top: 300px;
+    bottom: -30px;
+
+    @include atTablet {
+        // positioning
+        left: 80px;
+        bottom: 230px;
+    }
 }
 
 @include atTablet {
@@ -265,5 +277,11 @@
         // positioning
         right: 70px;
         top: 180px;
+    }
+
+    .dot--106 {
+        // positioning
+        left: 200px;
+        bottom: 40px;
     }
 }

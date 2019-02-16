@@ -1,18 +1,18 @@
 .role {
     // box model
-    max-width: 300px;
+    max-width: 260px;
     margin: 0 auto;
     margin-bottom: 40px;
-
+    
     // typography
     text-align: center;
-
+    
     @include atTablet {
         // positioning
         position: relative;
-
+        
         // box model
-        max-width: 260px;
+        max-width: 300px;
         margin-bottom: 60px;
     }
 
@@ -62,4 +62,9 @@
     // typography
     color: $light;
     line-height: 1.5;
+
+    @include atTablet {
+        // typography
+        font-size: 1.125rem;
+    }
 }

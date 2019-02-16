@@ -3,22 +3,18 @@
     position: absolute;
 
     // visual
-    // border: 1px solid green;
-
-    // visual
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .blob--1 {
     // positioning
-    transform: rotate(-45deg);
-    left: 95px;
+    left: 125px;
     top: 570px;
 
     // box model
-    height: 149px;
-    width: 226px;
+    height: 229px;
+    width: 160px;
 
     // visual
     background-image: url('./img/deco/blob-1.svg');
@@ -79,7 +75,6 @@
         height: 221px;
     }
 }
-
 
 .blob--4 {
     // positioning
@@ -171,5 +166,20 @@
         // box model
         height: 230px;
         width: 230px;
+    }
+}
+
+@include atTablet {
+    .blob--101 {
+        // positioning
+        left: 0;
+        top: -300px;
+
+        // box model
+        height: 277px;
+        width: 277px;
+
+        // visual
+        background-image: url('./img/deco/blob-3.svg');
     }
 }
