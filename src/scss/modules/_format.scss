@@ -7,4 +7,9 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        padding: 480px 90px;
+    }
 }

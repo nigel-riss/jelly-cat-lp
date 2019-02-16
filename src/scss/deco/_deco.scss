@@ -21,6 +21,16 @@
 
     // visual
     background-image: url('./img/deco/ok.svg');
+
+    @include atTablet {
+        // positioning
+        left: 112px;
+        top: 260px;
+        
+        // box model
+        height: 105px;
+        width: 64px;
+    }
 }
 
 .deco--fb {
@@ -34,11 +44,16 @@
 
     // visual
     background-image: url('./img/deco/facebook.svg');
+
+    @include atTablet {
+        // box model
+        height: 126px;
+        width: 68px;
+    }
 }
 
 .deco--vk {
     // positioning
-    // left: 179px;
     right: 30px;
     top: 660px;
 
@@ -48,6 +63,16 @@
 
     // visual
     background-image: url('./img/deco/vk.svg');
+
+    @include atTablet {
+        // positioning
+        right: 110px;
+        top: 790px;
+
+        // box model
+        height: 71px;
+        width: 125px;
+    }
 }
 
 .deco--inst {
@@ -61,6 +86,16 @@
 
     // visual
     background-image: url('./img/deco/instagram.svg');
+
+    @include atTablet {
+        // box model
+        left: 80px;
+        top: 850px;
+
+        // box model
+        height: 108px;
+        width: 108px;
+    }
 }
 
 .deco--bean-1 {

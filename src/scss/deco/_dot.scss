@@ -115,12 +115,24 @@
     // positioning
     right: 119px;
     top: 250px;
+
+    @include atTablet {
+        // positioning
+        right: 180px;
+        top: 280px;
+    }
 }
 
 .dot--6 {
     // positioning
     left: 44px;
     top: 620px;
+
+    @include atTablet {
+        // positioning
+        left: 120px;
+        top: 580px;
+    }
 }
 
 .dot--7 {
@@ -133,6 +145,12 @@
     // positioning
     right: 200px;
     top: 800px;
+
+    @include atTablet {
+        // positioning
+        right: 380px;
+        top: 980px;
+    }
 }
 
 .dot--9 {
