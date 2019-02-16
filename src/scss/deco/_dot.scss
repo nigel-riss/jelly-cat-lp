@@ -248,6 +248,24 @@
     }
 }
 
+.dot--101,
+.dot--102,
+.dot--103,
+.dot--104,
+.dot--105,
+.dot--106,
+.dot--107,
+.dot--108,
+.dot--109 {
+    // box model
+    display: none;
+
+    @include atTablet {
+        // box model
+        display: block;
+    }
+}
+
 @include atTablet {
     .dot--101 {
         // positioning
@@ -283,5 +301,23 @@
         // positioning
         left: 200px;
         bottom: 40px;
+    }
+
+    .dot--107 {
+        // positioning
+        left: 165px;
+        top: 200px;
+    }
+
+    .dot--108 {
+        // positioning
+        right: 90px;
+        top: 400px;
+    }
+
+    .dot--109 {
+        // positioning
+        left: -10px;
+        top: 500px;
     }
 }

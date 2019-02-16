@@ -7,10 +7,10 @@
     
     // box model
     height: 100%;
-    border: 1px solid green;
+    // border: 1px solid green;
 }
 
-.deco-layer--fixed {
+.deco-layer--header {
     // positioning
     left: 50%;
     transform: translateX(-50%);
@@ -21,6 +21,20 @@
     @include atTablet {
         // box model
         width: 500px;
+    }
+}
+
+.deco-layer--footer {
+    // positioning
+    left: 50%;
+    transform: translateX(-50%);
+
+    // box model
+    width: 320px;
+
+    @include atTablet {
+        // box model
+        width: auto;
     }
 }
 
