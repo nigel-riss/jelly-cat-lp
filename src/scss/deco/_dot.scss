@@ -69,6 +69,11 @@
     background-color: $purple;
 }
 
+.dot--wht {
+    // visual
+    background-color: $light;
+}
+
 .dot--1 {
     // positioning
     left: 13px;
@@ -210,7 +215,13 @@
 .dot--13 {
     // positioning
     left: -15px;
-    top: 380px;
+    bottom: 240px;
+
+    @include atTablet {
+        // positioning
+        left: 20px;
+        bottom: 200px;
+    }
 }
 
 .dot--14 {
@@ -248,5 +259,11 @@
         // positioning
         right: 400px;
         bottom: 140px;
+    }
+
+    .dot--105 {
+        // positioning
+        right: 70px;
+        top: 180px;
     }
 }

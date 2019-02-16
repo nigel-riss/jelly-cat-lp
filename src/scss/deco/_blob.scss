@@ -138,13 +138,23 @@
 
     // visual
     background-image: url('./img/deco/blob-3.svg');
+
+    @include atTablet {
+        // positioning
+        right: -40px;
+        top: -190px;
+
+        // box model
+        height: 174px;
+        width: 174px;
+    }
 }
 
 .blob--7 {
     // positioning
-    transform: rotate(-50deg);
+    transform: rotate(-45deg);
     right: 10px;
-    top: 640px;
+    bottom: -140px;
 
     // box model
     height: 160px;
@@ -152,4 +162,14 @@
 
     // visual
     background-image: url('./img/deco/blob-1.svg');
+
+    @include atTablet {
+        // positioning
+        right: -20px;
+        bottom: -90px;
+
+        // box model
+        height: 230px;
+        width: 230px;
+    }
 }
