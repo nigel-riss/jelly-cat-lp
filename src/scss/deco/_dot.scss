@@ -189,7 +189,6 @@
 
 .dot--9 {
     // positioning
-    // left: 255px;
     right: 60px;
     top: -75px;
 
@@ -197,6 +196,12 @@
         // positioning
         right: 200px;
         top: -120px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        right: 140px;
+        top: -60px;
     }
 }
 

@@ -18,13 +18,8 @@
 
     @include atDesktopS {
         // box model
-        flex-basis: 390px;
+        flex-basis: auto;
         margin: 20px 10px;
-    }
-
-    @include atDesktopM {
-        // box model
-        flex-basis: 330px;
     }
 }
 

@@ -165,7 +165,7 @@
 .deco--bean-3 {
     // positioning
     left: -10px;
-    top: 540px;
+    bottom: 220px;
 
     // box model
     height: 110px;
@@ -177,18 +177,23 @@
     @include atTablet {
         // positioning
         left: 45px;
-        top: 700px;
+        bottom: 120px;
 
         // box model
         height: 120px;
         width: 120px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        bottom: 0;
     }
 }
 
 .deco--bean-4 {
     // positioning
     right: -100px;
-    top: 820px;
+    bottom: -140px;
 
     // box model
     height: 180px;
@@ -200,11 +205,15 @@
     @include atTablet {
         // positioning
         right: -20px;
-        top: 900px;
 
         // box model
         height: 150px;
         width: 150px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        bottom: -100px;
     }
 }
 
