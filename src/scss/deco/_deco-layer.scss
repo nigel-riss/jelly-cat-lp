@@ -40,17 +40,11 @@
     }
 }
 
-.deco-layer--footer {
-    // positioning
-    left: 50%;
-    transform: translateX(-50%);
-
-    // box model
-    width: 320px;
-
-    @include atTablet {
+.deco-layer--about {
+    @include atDesktopS {
         // box model
-        width: auto;
+        margin: 0 auto;
+        width: 980px;
     }
 }
 

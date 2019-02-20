@@ -553,4 +553,14 @@
         // positioning
         top: -420px;
     }
+
+    @include atDesktopM {
+        // positioning
+        left: -1px;
+        top: -460px;
+
+        // box model
+        height: 569px;
+        width: 268px;
+    }
 }

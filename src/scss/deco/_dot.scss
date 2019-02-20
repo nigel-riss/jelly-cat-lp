@@ -366,6 +366,11 @@
         right: 75px;
         top: -70px;
     }
+
+    @include atDesktopM {
+        // positioning
+        right: 18%;
+    }
 }
 
 .dot--15 {
@@ -377,6 +382,11 @@
         // positioning
         left: 80px;
         bottom: 230px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        left: 8%;
     }
 }
 
@@ -462,13 +472,13 @@
 
     .dot--108 {
         // positioning
-        top: 280px;
+        top: 230px;
     }
 
     .dot--109 {
         // positioning
         left: 10px;
-        top: 340px;
+        top: 300px;
     }
 }
 
@@ -496,5 +506,16 @@
     .dot--105 {
         // positioning
         right: 23%;
+    }
+
+    .dot--106 {
+        // positioning
+        left: 18%;
+    }
+
+    .dot--109 {
+        // positioning
+        left: 3%;
+        top: 300px;
     }
 }
