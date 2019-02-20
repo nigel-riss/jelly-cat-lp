@@ -70,6 +70,12 @@
         height: 48px;
         width: 48px;
     }
+
+    @include atDesktopS {
+        // box model
+        height: 64px;
+        width: 64px;
+    }
 }
 
 .dot--org {
@@ -180,6 +186,12 @@
         right: 220px;
         top: 200px;
     }
+
+    @include atDesktopM {
+        // positioning
+        right: 30%;
+        top: 280px;
+    }
 }
 
 .dot--6 {
@@ -199,6 +211,12 @@
         bottom: 200px;
         left: 300px;
     }
+
+    @include atDesktopM {
+        // positioning
+        bottom: 130px;
+        left: 25%;
+    }
 }
 
 .dot--7 {
@@ -209,6 +227,12 @@
     @include atDesktopS {
         // positioning
         left: 80px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        left: -20px;
+        top: 380px;
     }
 }
 
@@ -226,6 +250,12 @@
     @include atDesktopS {
         // positioning
         bottom: 160px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        bottom: 100px;
+        right: 45%;
     }
 }
 

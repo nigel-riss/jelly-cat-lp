@@ -37,6 +37,15 @@
         left: 140px;
         top: 150px;
     }
+
+    @include atDesktopM {
+        // positioning
+        left: 15%;
+
+        // box model
+        height: 158px;
+        width: 96px;
+    }
 }
 
 .deco--fb {
@@ -61,6 +70,16 @@
         // positioning
         right: 100px;
         top: 240px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        right: 13%;
+        top: 270px;
+
+        // box model
+        height: 189px;
+        width: 102px;
     }
 }
 
@@ -91,6 +110,16 @@
         bottom: 180px;
         right: 160px;
     }
+
+    @include atDesktopM {
+        // positioning
+        bottom: 120px;
+        right: 24%;
+
+        // box model
+        height: 89px;
+        width: 156px;
+    }
 }
 
 .deco--inst {
@@ -118,6 +147,16 @@
     @include atDesktopS {
         // positioning
         bottom: 230px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        bottom: 160px;
+        left: 6%;
+
+        // box model
+        height: 160px;
+        width: 160px;
     }
 }
 
