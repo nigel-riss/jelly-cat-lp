@@ -21,6 +21,12 @@
         // box model
         padding: 70px 50px;
     }
+
+    @include atDesktopM {
+        // box model
+        padding: 70px calc((100% - 1040px) / 2);
+        padding-bottom: 40px;
+    }
 }
 
 .header::after {
@@ -94,6 +100,10 @@
     }
 
     @include atDesktopS {
+        // positioning
+        position: relative;
+        z-index: 3;
+
         // box model
         max-width: inherit;
         margin-bottom: 40px;

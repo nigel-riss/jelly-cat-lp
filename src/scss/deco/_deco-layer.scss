@@ -27,6 +27,16 @@
         // positioning
         transform: translateY(-40px);
         transform-origin: bottom center;
+        left: auto;
+        right: 0;
+
+        // box model
+        width: 650px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        right: calc((100% - 1040px) / 2);
     }
 }
 

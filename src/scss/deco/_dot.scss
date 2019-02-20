@@ -16,6 +16,12 @@
         height: 11px;
         width: 11px;
     }
+
+    @include atDesktopS {
+        // box model
+        height: 16px;
+        width: 16px;
+    }
 }
 
 .dot--m {
@@ -28,6 +34,12 @@
         height: 19px;
         width: 19px;
     }
+
+    @include atDesktopS {
+        // box model
+        height: 31px;
+        width: 31px;
+    }
 }
 
 .dot--l {
@@ -39,6 +51,12 @@
         // box model
         height: 28px;
         width: 28px;
+    }
+
+    @include atDesktopS {
+        // box model
+        height: 48px;
+        width: 48px;
     }
 }
 
@@ -84,6 +102,12 @@
         left: 30px;
         bottom: 270px;
     }
+
+    @include atDesktopS {
+        // positioning
+        left: 45px;
+        bottom: 405px;
+    }
 }
 
 .dot--2 {
@@ -95,6 +119,12 @@
         // positioning
         left: 65px;
         bottom: -85px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        left: 98px;
+        bottom: -180px;
     }
 }
 
@@ -108,6 +138,12 @@
         left: 360px;
         bottom: 235px;
     }
+
+    @include atDesktopS {
+        // positioning
+        left: 540px;
+        bottom: 343px;
+    }
 }
 
 .dot--4 {
@@ -119,6 +155,12 @@
         // positioning
         left: 380px;
         bottom: -135px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        left: 570px;
+        bottom: -203px;
     }
 }
 

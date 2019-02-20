@@ -3,9 +3,6 @@
     position: absolute;
 
     // visual
-    // border: 1px solid green;
-
-    // visual
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -32,13 +29,22 @@
         height: 128px;
         width: 98px;
     }
+
+    @include atDesktopS {
+        // positioning
+        left: 458px;
+        bottom: -150px;
+
+        // box model
+        height: 192px;
+        width: 147px;
+    }
 }
 
 .cat--slp-1 {
     // positioning
     transform: rotate(-70deg);
     left: 43px;
-    // top: 510px;
     bottom: -80px;
 
     // box model
@@ -56,6 +62,16 @@
         // box model
         height: 320px;
         width: 320px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        left: 75px;
+        bottom: -53px;
+
+        // box model
+        height: 480px;
+        width: 480px;
     }
 }
 
@@ -80,6 +96,16 @@
         // box model
         height: 310px;
         width: 310px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        left: 75px;
+        bottom: -225px;
+
+        // box model
+        height: 465px;
+        width: 465px;
     }
 }
 

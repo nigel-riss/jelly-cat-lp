@@ -28,6 +28,16 @@
         height: 306px;
         width: 358px;
     }
+
+    @include atDesktopS {
+        // positioning
+        left: 293px;
+        bottom: -180px;
+
+        // box model
+        height: 459px;
+        width: 537px;
+    }
 }
 
 .blob--2 {
@@ -51,6 +61,16 @@
         height: 122px;
         width: 189px;
     }
+
+    @include atDesktopS {
+        // positioning
+        left: 120px;
+        bottom: 323px;
+
+        // box model
+        height: 183px;
+        width: 284px;
+    }
 }
 
 .blob--3 {
@@ -73,6 +93,16 @@
         // box model
         width: 125px;
         height: 221px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        left: 188px;
+        bottom: -135px;
+
+        // box model
+        width: 188px;
+        height: 332px;
     }
 }
 
