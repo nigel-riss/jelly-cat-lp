@@ -13,9 +13,10 @@
 
     @include atDesktopS {
         // box model
-        padding: 70px 50px;
+        padding: 50px;
         display: flex;
         justify-content: space-between;
+        align-items: stretch;
     }
 }
 
@@ -26,6 +27,12 @@
         justify-content: space-between;
         align-items: flex-start;
     }
+
+    @include atDesktopS {
+        // box model
+        flex-grow: 2;
+        max-width: 700px;
+    }
 }
 
 .footer__legals {
@@ -34,6 +41,12 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+    }
+
+    @include atDesktopS {
+        // box model
+        flex-direction: column;
+        flex-grow: 1;
     }
 }
 
@@ -44,9 +57,7 @@
 
     @include atDesktopS {
         // box model
-        flex-basis: 32%;
         margin-bottom: 0;
-        margin-right: 40px;
     }
 }
 
@@ -75,6 +86,17 @@
         font-weight: 700;
         text-align: right;
     }
+
+    @include atDesktopS {
+        // box model
+        align-self: center;
+        margin-bottom: 0;
+
+        // typography
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 }
 
 .footer__contacts {
@@ -96,6 +118,16 @@
         font-size: 1.125rem;
         text-align: left;
     }
+
+    @include atDesktopS {
+        // box model
+        margin-bottom: 0;
+
+        // typography
+        font-size: 1rem;
+        line-height: 2;
+        font-weight: 500;
+    }
 }
 
 .footer__copy {
@@ -112,6 +144,14 @@
         // typography
         font-size: 1.125rem;
         text-align-last: left;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin: 0;
+
+        // typography
+        font-weight: 500;
     }
 }
 
@@ -134,5 +174,15 @@
         // typography
         font-size: 1.125rem;
         text-align: right;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin-bottom: 0;
+
+        // typography
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 2;
     }
 }

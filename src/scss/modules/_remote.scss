@@ -11,6 +11,12 @@
         padding: 260px 80px;
         padding-bottom: 400px;
     }
+
+    @include atDesktopS {
+        // box model
+        padding: 160px 80px;
+        padding-bottom: 260px;
+    }
 }
 
 .remote__header {
@@ -23,6 +29,13 @@
     @include atTablet {
         // box model
         margin-bottom: 60px;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin: 0 auto;
+        margin-bottom: 60px;
+        width: 600px;
     }
 }
 

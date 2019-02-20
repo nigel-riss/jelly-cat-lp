@@ -232,7 +232,8 @@
     @include atTablet {
         // positioning
         right: -40px;
-        top: 960px;
+        // top: 960px;
+        bottom: -200px;
 
         // box model
         height: 240px;
@@ -305,6 +306,11 @@
         // box model
         height: 320px;
         width: 320px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        bottom: -250px;
     }
 }
 
@@ -413,5 +419,10 @@
         // box model
         height: 520px;
         width: 300px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        top: -420px;
     }
 }

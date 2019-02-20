@@ -159,7 +159,6 @@
 
 .blob--7 {
     // positioning
-    transform: rotate(-45deg);
     right: 10px;
     bottom: -140px;
 
@@ -172,26 +171,40 @@
 
     @include atTablet {
         // positioning
-        right: -20px;
-        bottom: -90px;
+        right: -10px;
+        bottom: -70px;
 
         // box model
-        height: 230px;
-        width: 230px;
+        height: 220px;
+        width: 220px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        bottom: -50px;
     }
 }
 
-@include atTablet {
-    .blob--101 {
+.blob--101 {
+    // box model
+    display: none;
+
+    @include atTablet {
         // positioning
         left: 0;
         top: -300px;
 
         // box model
+        display: block;
         height: 277px;
         width: 277px;
 
         // visual
         background-image: url('./img/deco/blob-3.svg');
+    }
+
+    @include atDesktopS {
+        // positioning
+        top: -360px;
     }
 }

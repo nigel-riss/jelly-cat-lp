@@ -255,6 +255,12 @@
         left: 20px;
         bottom: 200px;
     }
+
+    @include atDesktopS {
+        // positioning
+        left: 80px;
+        bottom: 160px;
+    }
 }
 
 .dot--14 {
@@ -352,5 +358,23 @@
         // positioning
         left: -10px;
         top: 500px;
+    }
+}
+
+@include atDesktopS {
+    .dot--107 {
+        // positioning
+        top: 120px;
+    }
+
+    .dot--108 {
+        // positioning
+        top: 280px;
+    }
+
+    .dot--109 {
+        // positioning
+        left: 10px;
+        top: 340px;
     }
 }

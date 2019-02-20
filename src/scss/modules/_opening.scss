@@ -79,9 +79,9 @@
         max-width: 600px;
     }
 
-    @include atDesktopM {
+    @include atDesktopS {
         // box model
-        padding: 100px 0;
+        max-width: 720px;
     }
 }
 

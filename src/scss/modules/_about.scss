@@ -73,6 +73,13 @@
     
     // typography
     text-align: center;
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
 }
 
 .about__content {
@@ -86,11 +93,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    @include atDesktopM {
-        // box model
-        justify-content: space-between;
     }
 }
 

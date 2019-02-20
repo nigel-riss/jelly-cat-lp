@@ -12,6 +12,11 @@
         // box model
         width: 330px;
     }
+
+    @include atDesktopS {
+        // box model
+        width: 300px;
+    }
 }
 
 .quote__text {

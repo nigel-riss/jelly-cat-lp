@@ -14,7 +14,7 @@
 
     @include atDesktopS {
         // box model
-        padding: 120px;
+        padding: 160px 50;
     }
 }
 
@@ -49,6 +49,11 @@
 
         // typography
         font-size: 5rem;
+    }
+
+    @include atDesktopS {
+        // typography
+        font-size: 6rem;
     }
 }
 
