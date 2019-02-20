@@ -96,6 +96,12 @@
         height: 129px;
         width: 198px;
     }
+
+    @include atDesktopS {
+        // positioning
+        right: 45px;
+        top: 20px;
+    }
 }
 
 .blob--5 {
@@ -118,6 +124,12 @@
         // box model
         height: 107px;
         width: 180px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        left: -40px;
+        bottom: 190px;
     }
 }
 

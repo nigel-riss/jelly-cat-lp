@@ -12,13 +12,13 @@
 
     @include atDesktopS {
         // box model
-        padding: 70px 50px;
+        padding: 160px 50px;
     }
 
-    @include atDesktopM {
-        // box model
-        padding: 70px calc((100% - 1100px) / 2);
-    }
+    // @include atDesktopM {
+    //     // box model
+    //     padding: 70px calc((100% - 1100px) / 2);
+    // }
 }
 
 .u-get__header {
@@ -41,14 +41,6 @@
 .u-get__content {
     // box model
     padding: 0 5px;
-
-    @include atTablet {
-        // box model
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 0;
-    }
 }
 
 

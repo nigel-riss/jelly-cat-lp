@@ -9,11 +9,25 @@
         margin: 0 auto;
         width: 330px;
     }
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+        width: 660px;
+    }
 }
 
 .feature-list--get {
     @include atTablet {
         // box model
         width: 360px;
+    }
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+        width: 660px;
     }
 }

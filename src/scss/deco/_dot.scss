@@ -215,6 +215,12 @@
         left: 160px;
         top: -100px;
     }
+
+    @include atDesktopS {
+        // positioning
+        left: 300px;
+        // top: -90px;
+    }
 }
 
 .dot--11 {

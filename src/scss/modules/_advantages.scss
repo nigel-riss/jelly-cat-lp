@@ -81,13 +81,13 @@
     // box model
     margin-bottom: 60px;
 
-    @include atTablet {
-        // box model
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: stretch;
-    }
+    // @include atTablet {
+    //     // box model
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-between;
+    //     align-items: stretch;
+    // }
 }
 
 .advantages__button {

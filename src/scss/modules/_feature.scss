@@ -11,18 +11,23 @@
     color: $light;
     line-height: 1.5;
 
-    @include atDesktopM {
+    @include atDesktopS {
         // box model
-        flex-basis: 30%;
-
-        &:nth-child(1) { order: 0; }
-        &:nth-child(2) { order: 3; }
-        &:nth-child(3) { order: 6; }
-        &:nth-child(4) { order: 1; }
-        &:nth-child(5) { order: 4; }
-        &:nth-child(6) { order: 2; }
-        &:nth-child(7) { order: 5; }
+        flex-basis: 50%;
     }
+
+    // @include atDesktopM {
+    //     // box model
+    //     flex-basis: 30%;
+
+    //     &:nth-child(1) { order: 0; }
+    //     &:nth-child(2) { order: 3; }
+    //     &:nth-child(3) { order: 6; }
+    //     &:nth-child(4) { order: 1; }
+    //     &:nth-child(5) { order: 4; }
+    //     &:nth-child(6) { order: 2; }
+    //     &:nth-child(7) { order: 5; }
+    // }
 }
 
 .feature::before {
