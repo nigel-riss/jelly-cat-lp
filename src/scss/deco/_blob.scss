@@ -132,6 +132,16 @@
         right: 45px;
         top: 20px;
     }
+
+    @include atDesktopM {
+        // positioning
+        right: 64px;
+        top: 40px;
+
+        // box model
+        height: 194px;
+        width: 300px;
+    }
 }
 
 .blob--5 {

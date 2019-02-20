@@ -309,12 +309,17 @@
     @include atTablet {
         // positioning
         right: -40px;
-        // top: 960px;
         bottom: -200px;
 
         // box model
         height: 240px;
         width: 240px;
+    }
+
+    @include atDesktopM {
+        // box model
+        height: 300px;
+        width: 300px;
     }
 }
 
@@ -421,6 +426,15 @@
         height: 450px;
         width: 323px;
     }
+
+    @include atDesktopM {
+        // positioning
+        top: -220px;
+
+        // box model
+        height: 685px;
+        width: 492px;
+    }
 }
 
 .deco--choops-2 {
@@ -448,6 +462,16 @@
     @include atDesktopS {
         // positioning
         bottom: -160px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        bottom: -300px;
+        left: -1px;
+
+        // box model
+        height: 575px;
+        width: 344px;
     }
 }
 

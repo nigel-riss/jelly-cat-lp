@@ -291,7 +291,11 @@
     @include atDesktopS {
         // positioning
         left: 300px;
-        // top: -90px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        left: 27%;
     }
 }
 
@@ -301,8 +305,14 @@
     top: 140px;
 
     @include atTablet {
+        // positioning
         right: 80px;
         top: 280px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        right: 7%;
     }
 }
 
@@ -314,6 +324,12 @@
     @include atTablet {
         // positioning
         left: 140px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        bottom: 20px;
+        left: 27%;
     }
 }
 
@@ -449,4 +465,27 @@
         left: 10px;
         top: 340px;
     }
+}
+
+@include atDesktopM {
+    .dot--101 {
+        // positioning
+        left: 3%;
+    }
+
+    .dot--102 {
+        // positioning
+        right: 8%;
+    }
+
+    .dot--103 {
+        // positioning
+        left: 9%;
+    }
+
+    .dot--104 {
+        // positioning
+        right: 33%;
+    }
+
 }

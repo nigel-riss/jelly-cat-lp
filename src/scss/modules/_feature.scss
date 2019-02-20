@@ -16,6 +16,12 @@
         flex-basis: 50%;
     }
 
+    @include atDesktopM {
+        // typography
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
     // @include atDesktopM {
     //     // box model
     //     flex-basis: 30%;

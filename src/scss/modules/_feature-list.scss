@@ -14,7 +14,12 @@
         // box model
         display: flex;
         flex-wrap: wrap;
-        width: 660px;
+        width: 700px;
+    }
+
+    @include atDesktopM {
+        // box model
+        width: 780px;
     }
 }
 
@@ -28,6 +33,11 @@
         // box model
         display: flex;
         flex-wrap: wrap;
-        width: 660px;
+        width: 720px;
+    }
+
+    @include atDesktopM {
+        // box model
+        width: 780px;
     }
 }
