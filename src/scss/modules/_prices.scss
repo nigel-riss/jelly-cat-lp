@@ -43,6 +43,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+    
+    @include atDesktopM {
+        // visual
+        background-image: url('./img/bgs/prices-top-l.svg');
+        background-size: 100% 82px;
+    }
 }
 
 .prices::after {
@@ -63,6 +69,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    
+    @include atDesktopM {
+        // visual
+        background-image: url('./img/bgs/prices-bottom-l.svg');
+        background-size: 100% 82px;
+    }
 }
 
 

@@ -15,11 +15,6 @@
         padding: 80px;
         padding-top: 20px;
     }
-
-    @include atDesktopM {
-        // box model
-        padding: 70px calc((100% - 1100px) / 2);
-    }
 }
 
 .about::before {
@@ -41,6 +36,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+    
+    @include atDesktopM {
+        // visual
+        background-image: url('./img/bgs/about-top-l.svg');
+        background-size: 100% 202px;
+    }
 }
 
 .about__header {
@@ -80,6 +81,11 @@
         justify-content: space-between;
         margin-bottom: 0;
     }
+
+    @include atDesktopM {
+        // box model
+        justify-content: space-around;
+    }
 }
 
 .about__content {
@@ -93,6 +99,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    @include atDesktopM {
+        // box model
+        justify-content: space-between;
     }
 }
 

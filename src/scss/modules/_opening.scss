@@ -34,6 +34,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+    
+    @include atDesktopM {
+        // visual
+        background-image: url('./img/bgs/opening-top-l.svg');
+        background-size: 100% 82px;
+    }
 }
 
 .opening::after {
@@ -54,6 +60,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    
+    @include atDesktopM {
+        // visual
+        background-image: url('./img/bgs/opening-bottom-l.svg');
+        background-size: 100% 82px;
+    }
 }
 
 .opening__header {
