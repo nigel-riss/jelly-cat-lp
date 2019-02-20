@@ -104,6 +104,8 @@
     @include atDesktopM {
         // box model
         justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1200px;
     }
 }
 
