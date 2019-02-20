@@ -344,6 +344,15 @@
         height: 230px;
         width: 230px;
     }
+
+    @include atDesktopM {
+        // positioning
+        left: 4%;
+
+        // box model
+        height: 300px;
+        width: 300px;
+    }
 }
 
 .deco--bean-7 {
@@ -365,6 +374,15 @@
         // box model
         height: 221px;
         width: 123px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        top: -320px;
+
+        // box model
+        height: 277px;
+        width: 154px;
     }
 }
 
@@ -497,6 +515,15 @@
 
         // visual
         background-image: url('./img/deco/candy-1-l.png');
+    }
+
+    @include atDesktopM {
+        // positioning
+        right: -1px;
+
+        // box model
+        height: 550px;
+        width: 336px;
     }
 }
 

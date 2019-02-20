@@ -38,6 +38,11 @@
     font-weight: 700;
     line-height: 1.5;
 
+    @include atDesktopM {
+        // typography
+        font-size: 7rem;
+    }
+
     &--crimson {
         // typography
         color: $crimson;

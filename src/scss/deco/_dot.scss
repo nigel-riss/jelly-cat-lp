@@ -349,6 +349,11 @@
         left: 80px;
         bottom: 160px;
     }
+
+    @include atDesktopM {
+        // positioning
+        left: 8%;
+    }
 }
 
 .dot--14 {
@@ -488,4 +493,8 @@
         right: 33%;
     }
 
+    .dot--105 {
+        // positioning
+        right: 23%;
+    }
 }

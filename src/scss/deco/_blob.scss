@@ -171,6 +171,16 @@
         left: -40px;
         bottom: 190px;
     }
+
+    @include atDesktopM {
+        // positioning
+        left: -5%;
+        bottom: 160px;
+
+        // box model
+        height: 161px;
+        width: 270px;
+    }
 }
 
 .blob--6 {
@@ -194,6 +204,16 @@
         // box model
         height: 174px;
         width: 174px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        right: -6%;
+        top: -270px;
+
+        // box model
+        height: 280px;
+        width: 280px;
     }
 }
 
@@ -222,6 +242,15 @@
     @include atDesktopS {
         // positioning
         bottom: -50px;
+    }
+
+    @include atDesktopM {
+        // box model
+        bottom: -30px;
+
+        // box model
+        height: 300px;
+        width: 300px;
     }
 }
 

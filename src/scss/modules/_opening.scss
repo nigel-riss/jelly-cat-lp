@@ -95,6 +95,11 @@
         // box model
         max-width: 720px;
     }
+
+    @include atDesktopM {
+        // box model
+        margin-bottom: 120px;
+    }
 }
 
 .opening__button {
