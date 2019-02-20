@@ -77,48 +77,48 @@
 .dot--1 {
     // positioning
     left: 13px;
-    top: 515px;
+    bottom: 100px;
 
     @include atTablet {
         // positioning
         left: 30px;
-        top: 700px;
+        bottom: 270px;
     }
 }
 
 .dot--2 {
     // positioning
     left: 50px;
-    top: 738px;
+    bottom: -125px;
 
     @include atTablet {
         // positioning
         left: 65px;
-        top: 1060px;
+        bottom: -85px;
     }
 }
 
 .dot--3 {
     // positioning
     left: 232px;
-    top: 527px;
+    bottom: 80px;
 
     @include atTablet {
         // positioning
         left: 360px;
-        top: 730px;
+        bottom: 235px;
     }
 }
 
 .dot--4 {
     // positioning
     left: 250px;
-    top: 763px;
+    bottom: -160px;
 
     @include atTablet {
         // positioning
         left: 380px;
-        top: 1092px;
+        bottom: -135px;
     }
 }
 

@@ -14,7 +14,7 @@
     // positioning
     transform: rotate(35deg);
     left: 197px;
-    top: 660px;
+    bottom: -125px;
 
     // box model
     height: 81px;
@@ -26,7 +26,7 @@
     @include atTablet {
         // positioning
         left: 305px;
-        top: 955px;
+        bottom: -100px;
 
         // box model
         height: 128px;
@@ -38,7 +38,8 @@
     // positioning
     transform: rotate(-70deg);
     left: 43px;
-    top: 510px;
+    // top: 510px;
+    bottom: -80px;
 
     // box model
     height: 190px;
@@ -50,7 +51,7 @@
     @include atTablet {
         // positioning
         left: 50px;
-        top: 700px;
+        bottom: -35px;
 
         // box model
         height: 320px;
@@ -61,7 +62,7 @@
 .cat--pur-1 {
     // positioning
     left: 40px;
-    top: 580px;
+    bottom: -165px;
     z-index: 2;
 
     // box model
@@ -74,7 +75,7 @@
     @include atTablet {
         // positioning
         left: 50px;
-        top: 825px;
+        bottom: -150px;
 
         // box model
         height: 310px;
