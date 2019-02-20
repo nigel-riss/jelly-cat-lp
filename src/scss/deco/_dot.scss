@@ -231,12 +231,11 @@
 .dot--12 {
     // positioning
     left: 40px;
-    top: 770px;
+    bottom: 30px;
 
     @include atTablet {
         // positioning
         left: 140px;
-        top: 940px;
     }
 }
 
