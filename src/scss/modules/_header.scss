@@ -3,8 +3,8 @@
     position: relative;
 
     // box model
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     padding: 40px 20px;
     padding-bottom: 160px;
 
@@ -15,6 +15,11 @@
         // box model
         padding: 75px 60px;
         padding-bottom: 360px;
+    }
+
+    @include atDesktopS {
+        // box model
+        padding: 70px 50px;
     }
 }
 
@@ -51,6 +56,14 @@
         height: 72px;
         margin-bottom: 90px;
     }
+
+    @include atDesktopS {
+        // box model
+        margin-bottom: 60px;
+
+        // typography
+        text-align: left;
+    }
 }
 
 .header__logo img {
@@ -73,6 +86,15 @@
         max-width: 550px;
         margin-bottom: 55px;
     }
+
+    @include atDesktopS {
+        // box model
+        max-width: inherit;
+        margin-bottom: 40px;
+
+        // typography
+        text-align: left;
+    }
 }
 
 .header__title {
@@ -91,12 +113,17 @@
         font-size: 3.15rem;
     }
 
-    @include atDesktopM {
+    @include atDesktopS {
         // box model
-        max-width: 720px;
+        max-width: 450px;
 
         // typography
         font-size: 2.5rem;
+    }
+    
+    @include atDesktopM {
+        
+        font-size: 3.25rem;
     }
 }
 
@@ -114,11 +141,21 @@
         font-size: 1.25rem;
         font-weight: 500;
     }
+
+    @include atDesktopS {
+        // box model
+        max-width: 450px;
+    }
 }
 
 .header__button{
     // typography
     text-align: center;
+
+    @include atDesktopS {
+        // typography
+        text-align: left;
+    }
 }
 
 // decorations
@@ -135,4 +172,7 @@
     // box model
     height: 100%;
     width: 100%;
+
+    // visual
+    pointer-events: none;
 }
