@@ -16,6 +16,11 @@ html {
 body {
     // box model
     box-sizing: border-box;
+
+    @include atDesktopS {
+        // visual
+        overflow-x: hidden;
+    }
 }
 
 main {

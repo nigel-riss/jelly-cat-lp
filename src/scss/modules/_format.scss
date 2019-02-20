@@ -12,4 +12,9 @@
         // box model
         padding: 480px 90px;
     }
+
+    @include atDesktopS {
+        // box model
+        padding: 300px 90px;
+    }
 }

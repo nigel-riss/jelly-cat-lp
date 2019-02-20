@@ -22,6 +22,12 @@
         // box model
         width: 500px;
     }
+
+    @include atDesktopS {
+        // positioning
+        transform: translateY(-40px);
+        transform-origin: bottom center;
+    }
 }
 
 .deco-layer--footer {

@@ -31,6 +31,12 @@
         height: 105px;
         width: 64px;
     }
+
+    @include atDesktopS {
+        // positioning
+        left: 140px;
+        top: 150px;
+    }
 }
 
 .deco--fb {
@@ -50,12 +56,18 @@
         height: 126px;
         width: 68px;
     }
+
+    @include atDesktopS {
+        // positioning
+        right: 100px;
+        top: 240px;
+    }
 }
 
 .deco--vk {
     // positioning
     right: 30px;
-    top: 660px;
+    bottom: 270px;
 
     // box model
     height: 53px;
@@ -67,18 +79,24 @@
     @include atTablet {
         // positioning
         right: 110px;
-        top: 790px;
+        bottom: 360px;
 
         // box model
         height: 71px;
         width: 125px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        bottom: 180px;
+        right: 160px;
     }
 }
 
 .deco--inst {
     // positioning
     left: 27px;
-    top: 700px;
+    bottom: 220px;
 
     // box model
     height: 72px;
@@ -88,13 +106,18 @@
     background-image: url('./img/deco/instagram.svg');
 
     @include atTablet {
-        // box model
+        // positioning
         left: 80px;
-        top: 850px;
+        bottom: 260px;
 
         // box model
         height: 108px;
         width: 108px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        bottom: 230px;
     }
 }
 

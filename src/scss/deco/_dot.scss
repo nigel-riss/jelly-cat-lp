@@ -132,17 +132,30 @@
         right: 180px;
         top: 280px;
     }
+
+    @include atDesktopS {
+        // positioning
+        right: 220px;
+        top: 200px;
+    }
 }
 
 .dot--6 {
     // positioning
     left: 44px;
-    top: 620px;
+    bottom: 360px;
 
     @include atTablet {
         // positioning
         left: 120px;
         top: 580px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        top: auto;
+        bottom: 200px;
+        left: 300px;
     }
 }
 
@@ -150,17 +163,27 @@
     // positioning
     left: 39px;
     top: 330px;
+
+    @include atDesktopS {
+        // positioning
+        left: 80px;
+    }
 }
 
 .dot--8 {
     // positioning
     right: 200px;
-    top: 800px;
+    bottom: 160px;
 
     @include atTablet {
         // positioning
         right: 380px;
-        top: 980px;
+        bottom: 220px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        bottom: 160px;
     }
 }
 
