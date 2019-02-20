@@ -13,6 +13,11 @@
         // box model
         padding: 70px 50px;
     }
+
+    @include atDesktopM {
+        // box model
+        padding: 70px calc((100% - 1040px) / 2);
+    }
 }
 
 .who-suit::before {
@@ -85,14 +90,6 @@
         margin: 0 auto;
         margin-bottom: 40px;
     }
-
-    @include atDesktopM {
-        // box model
-        flex-basis: 360px;
-
-        // typography
-        text-align: left;
-    }
 }
 
 .who-suit__content {
@@ -118,10 +115,10 @@
         max-width: inherit;
     }
 
-    // @include atDesktopM {
-    //     // box model
-    //     flex-basis: 700px;
-    // }
+    @include atDesktopM {
+        // box model
+        justify-content: space-between;
+    }
 }
 
 .who-suit__button {

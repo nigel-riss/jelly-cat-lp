@@ -13,6 +13,11 @@
         padding: 160px 50px;
         padding-bottom: 100px;
     }
+
+    @include atDesktopM {
+        // box model
+        padding: 160px calc((100% - 1040px) / 2);
+    }
 }
 
 .for-you__header {

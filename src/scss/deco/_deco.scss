@@ -152,7 +152,7 @@
     @include atDesktopM {
         // positioning
         bottom: 160px;
-        left: 6%;
+        left: 8%;
 
         // box model
         height: 160px;
@@ -180,6 +180,15 @@
         width: 220px;
         height: 220px;
     }
+
+    @include atDesktopM {
+        // positioning
+        left: 3%;
+
+        // box model
+        height: 310px;
+        width: 310px;
+    }
 }
 
 .deco--bean-2 {
@@ -198,6 +207,15 @@
         // positioning
         right: -30px;
         top: 40px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        right: 5%;
+
+        // box model
+        height: 300px;
+        width: 300px;
     }
 }
 
@@ -227,6 +245,16 @@
         // positioning
         bottom: 0;
     }
+
+    @include atDesktopM {
+        // positioning
+        bottom: -60px;
+        left: 5%;
+
+        // box model
+        height: 200px;
+        width: 200px;
+    }
 }
 
 .deco--bean-4 {
@@ -253,6 +281,16 @@
     @include atDesktopS {
         // positioning
         bottom: -100px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        bottom: -150px;
+        right: 0;
+
+        // box model
+        height: 240px;
+        width: 240px;
     }
 }
 

@@ -39,6 +39,14 @@
         // typography
         font-size: 1.125rem;
     }
+
+    @include atDesktopM {
+        // box model
+        width: 330px;
+
+        // typography
+        font-size: 1.25rem;
+    }
 }
 
 .button--260 {
