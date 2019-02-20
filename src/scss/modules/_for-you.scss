@@ -10,12 +10,8 @@
 
     @include atDesktopS {
         // box model
-        padding: 60px 50px;
-    }
-
-    @include atDesktopM {
-        // box model
-        padding: 70px calc((100% - 1100px) / 2);
+        padding: 160px 50px;
+        padding-bottom: 100px;
     }
 }
 
@@ -30,7 +26,7 @@
 
     @include atDesktopS {
         // box model
-        max-width: 420px;
+        max-width: 620px;
         margin: 0 auto;
         margin-bottom: 60px;
     }

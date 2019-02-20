@@ -16,12 +16,18 @@
         margin: 20px;
     }
 
-    @include atDesktopM {
+    @include atDesktopS {
         // box model
-        flex-basis: auto;
-        margin: 0;
-        max-width: inherit;
+        flex-basis: 27%;
+        max-width: 300px;
     }
+
+    // @include atDesktopM {
+    //     // box model
+    //     flex-basis: auto;
+    //     margin: 0;
+    //     max-width: inherit;
+    // }
 }
 
 .quality__icon {
@@ -39,14 +45,4 @@
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.5;
-
-    @include atDesktopS {
-        // box model
-        margin: 0 30px;
-    }
-
-    @include atDesktopM {
-        // box model
-        margin: 20px;
-    }
 }
