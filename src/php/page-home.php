@@ -268,11 +268,12 @@
                 </div>
             </div>
             <header class="prices__header">
-                <h2 class="section-title section-title--light">Стоимость франшизы</h2>
+                <h2 class="section-title section-title--light">Стоимость франшизы <span class="hidden creditgoods">Jelly Cat Франшиза</span></h2>
             </header>
-            <p class="prices__count"><strong>100&nbsp;000</strong> ₽</p>
-            <div class="prices__buttons"><a class="button button--260 contact-button" href="#">Купить в кредит</a><a
-                    class="button button--260 contact-button" href="#">Купить</a></div>
+            <p class="prices__count"><strong class="creditprice">100&nbsp;000</strong> ₽</p>
+            <div class="prices__buttons">
+                <a class="button button--260 gocredit" href="javascript:void(0);">Купить в кредит</a>
+                <a class="button button--260 contact-button" href="#">Купить</a></div>
         </section>
 
         <!-- Remote -->
