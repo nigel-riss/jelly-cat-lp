@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="header__deco">
             <div class="deco-layer deco-layer--header deco-layer--dots">
@@ -49,7 +50,11 @@
         </div>
         <div class="header__button"><a class="button contact-button" href="#">Узнать подробнее</a></div>
     </header>
+
+
+    <!-- Main -->
     <main>
+        <!-- Format -->
         <section class="format">
             <div class="format__deco">
                 <div class="deco-layer deco-layer--dots">
@@ -71,6 +76,8 @@
                     В&nbsp;вашем распоряжении будут такие площадки, как: сайт–магазин, VK, Instagram, Facebook, Ok.ru</p>
             </header>
         </section>
+
+        <!-- Who Suit -->
         <section class="who-suit">
             <div class="who-suit__deco">
                 <div class="deco-layer deco-layer--images">
@@ -106,6 +113,8 @@
             </div>
             <div class="who-suit__button"><a class="button button--red contact-button" href="#">Мне подходит</a></div>
         </section>
+
+        <!-- For You -->
         <section class="for-you">
             <header class="for-you__header">
                 <h2 class="section-title section-title--purple">Этот бизнес для Вас, <br>если Вы:</h2>
@@ -133,6 +142,8 @@
                 </article>
             </div>
         </section>
+
+        <!-- Advantages -->
         <section class="advantages">
             <div class="advantages__deco">
                 <div class="deco-layer deco-layer--dots">
@@ -170,6 +181,8 @@
             </div>
             <div class="advantages__button"><a class="button contact-button" href="#">Узнать подробнее</a></div>
         </section>
+
+        <!-- You Get -->
         <section class="u-get">
             <div class="u-get__deco">
                 <div class="deco-layer deco-layer--dots">
@@ -201,6 +214,8 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Opening -->
         <section class="opening">
             <div class="opening__deco">
                 <div class="deco-layer deco-layer--dots">
@@ -228,11 +243,15 @@
             </div>
             <div class="opening__button"><a class="button contact-button button--red" href="#">Узнать подробнее</a></div>
         </section>
+
+        <!-- Economy -->
         <section class="economy">
             <p class="economy__text"><span class="economy__value">до <strong>700&nbsp;000</strong> ₽</span> вы сможете
                 заработать <br>за&nbsp;год, работая с нами</p>
             <div class="economy__button"><a class="button contact-button button--red" href="#">Начать зарабатывать</a></div>
         </section>
+
+        <!-- Prices -->
         <section class="prices">
             <div class="prices__deco">
                 <div class="deco-layer deco-layer--dots">
@@ -255,6 +274,8 @@
             <div class="prices__buttons"><a class="button button--260 contact-button" href="#">Купить в кредит</a><a
                     class="button button--260 contact-button" href="#">Купить</a></div>
         </section>
+
+        <!-- Remote -->
         <section class="remote">
             <div class="remote--deco">
                 <div class="deco-layer deco-layer--dots">
@@ -271,6 +292,8 @@
             </header>
             <div class="remote__button"><a class="button contact-button button--red" href="#">Оставить заявку</a></div>
         </section>
+
+        <!-- About -->
         <section class="about">
             <div class="about__deco">
                 <div class="deco-layer deco-layer--about deco-layer--images">
@@ -302,6 +325,8 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-pink.svg" alt="Логотип Jelly Cat" /></div>
@@ -312,21 +337,26 @@
             <p class="footer__copy">Jelly Cat © 2019</p>
         </div>
     </footer>
-    <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>
+
+    <!-- Contact Popup -->
+    <div class="contact-popup contact-popup--hidden contact-button">
+        <button class="contact-popup__close"></button>
         <div class="contact-popup__cover"></div>
         <div class="contact-popup__form">
-            <form class="form" action="">
+            <form class="form" action="<?php echo esc_url(home_url('/')); ?>order/" method="post">
                 <h2 class="form__title">Оставьте заявку</h2>
-                <div class="form__input-grp"><input class="form__input" type="text" name="name" placeholder="Имя"
+                <div class="form__input-grp"><input class="form__input" type="text" name="contact_name" placeholder="Имя"
                         required="required" /></div>
-                <div class="form__input-grp"><input class="form__input" type="email" name="email" placeholder="Email"
+                <div class="form__input-grp"><input class="form__input" type="email" name="contact_email" placeholder="Email"
                         required="required" /></div>
-                <div class="form__input-grp"><input class="form__input" type="tel" name="phone" placeholder="Телефон"
+                <div class="form__input-grp"><input class="form__input" type="tel" name="contact_phone" placeholder="Телефон"
                         required="required" /></div><input class="form__submit" type="submit" value="Отправить" />
                 <p class="form__text">Мы не передаем Вашу персональную информацию третьим лицам</p>
             </form>
         </div>
     </div>
+
+    <!-- Policy Popup -->
     <div class="policy-popup policy-popup--hidden"><button class="policy-popup__close"></button>
         <div class="policy-popup__content">
             <h2>Политика конфиденциальности</h2>
