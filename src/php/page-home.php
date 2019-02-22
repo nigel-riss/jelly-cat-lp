@@ -11,8 +11,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
+
     <title>Купить франшизу Jelly Cat</title>
+
+    <!-- v-credit.su -->
+    <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script>
+
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -35,7 +41,7 @@
                 <div class="blob blob--2"></div>
             </div>
         </div>
-        <div class="header__logo"><img src="./img/logo-white.svg" alt="Логотип франшизы Jelly Cat" /></div>
+        <div class="header__logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-white.svg" alt="Логотип франшизы Jelly Cat" /></div>
         <div class="header__caption">
             <h1 class="header__title">Jelly Cat — франшиза интернет магазина сладостей со всего мира</h1>
             <p class="header__text">Яркие, вкусные, запоминающиеся, притягательные. Это&nbsp;выделяет нас на&nbsp;рынке
@@ -82,17 +88,17 @@
             </header>
             <div class="who-suit__content">
                 <article class="role">
-                    <div class="role__icon"><img src="./img/icons/employer.svg" alt="Иконка предпринимателя" /></div>
+                    <div class="role__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/employer.svg" alt="Иконка предпринимателя" /></div>
                     <h3 class="role__title">Предпринимателям</h3>
                     <p class="role__desc">Создать ещё один источник дохода и&nbsp;зарабатывать в&nbsp;разы больше</p>
                 </article>
                 <article class="role">
-                    <div class="role__icon"><img src="./img/icons/mother.svg" alt="Иконка мамы" /></div>
+                    <div class="role__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/mother.svg" alt="Иконка мамы" /></div>
                     <h3 class="role__title">Мамам в декрете</h3>
                     <p class="role__desc">Начать собственное дело, при этом зарабатывая находясь рядом с&nbsp;семьёй</p>
                 </article>
                 <article class="role">
-                    <div class="role__icon"><img src="./img/icons/student.svg" alt="Иконка студента" /></div>
+                    <div class="role__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/student.svg" alt="Иконка студента" /></div>
                     <h3 class="role__title">Студентам</h3>
                     <p class="role__desc">Для тех, кто хочет перестать жить за&nbsp;счёт родителей и&nbsp;перестать
                         изматывать себя на&nbsp;копеечных подработках</p>
@@ -106,23 +112,23 @@
             </header>
             <div class="for-you__content">
                 <article class="quality">
-                    <div class="quality__icon"><img src="./img/icons/hand.svg" alt="Иконка руки с монетой" /></div>
+                    <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/hand.svg" alt="Иконка руки с монетой" /></div>
                     <h3 class="quality__title">Хотите начать своё&nbsp;дело без&nbsp;внушительных затрат</h3>
                 </article>
                 <article class="quality">
-                    <div class="quality__icon"><img src="./img/icons/money.svg" alt="Иконка стопки монет" /></div>
+                    <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/money.svg" alt="Иконка стопки монет" /></div>
                     <h3 class="quality__title">Настроены изменить своё финансовое положение</h3>
                 </article>
                 <article class="quality">
-                    <div class="quality__icon"><img src="./img/icons/laugh.svg" alt="Иконка смеющихся людей" /></div>
+                    <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/laugh.svg" alt="Иконка смеющихся людей" /></div>
                     <h3 class="quality__title">Любите общение <br>с&nbsp;людьми</h3>
                 </article>
                 <article class="quality">
-                    <div class="quality__icon"><img src="./img/icons/shield.svg" alt="Иконка щита" /></div>
+                    <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/shield.svg" alt="Иконка щита" /></div>
                     <h3 class="quality__title">Развиваетесь и&nbsp;любите <br>узнавать новое</h3>
                 </article>
                 <article class="quality">
-                    <div class="quality__icon"><img src="./img/icons/development.svg" alt="Иконка графика" /></div>
+                    <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/development.svg" alt="Иконка графика" /></div>
                     <h3 class="quality__title">Несёте ответственность <br>за&nbsp;свою жизнь</h3>
                 </article>
             </div>
@@ -287,18 +293,18 @@
                 </article>
             </div>
             <div class="about__content">
-                <article class="ref"><img src="./img/icons/forbes.svg" alt="Forbes" height="30" /></article>
-                <article class="ref"><img src="./img/icons/beboss.png" alt="БиБосс" height="35" /></article>
-                <article class="ref"><img src="./img/icons/24-mir.svg" alt="24 мир" height="45" /></article>
-                <article class="ref"><img src="./img/icons/businessmens.svg" alt="Бизнесменс" height="20" /></article>
-                <article class="ref ref--spc"><img src="./img/icons/rbk.svg" alt="РБК" height="23" /></article>
-                <article class="ref"><img src="./img/icons/top-franchise.png" alt="TopFranchise.ru" height="23" /></article>
+                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/forbes.svg" alt="Forbes" height="30" /></article>
+                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/beboss.png" alt="БиБосс" height="35" /></article>
+                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/24-mir.svg" alt="24 мир" height="45" /></article>
+                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/businessmens.svg" alt="Бизнесменс" height="20" /></article>
+                <article class="ref ref--spc"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/rbk.svg" alt="РБК" height="23" /></article>
+                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/top-franchise.png" alt="TopFranchise.ru" height="23" /></article>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__content">
-            <div class="footer__logo"><img src="./img/logo-pink.svg" alt="Логотип Jelly Cat" /></div>
+            <div class="footer__logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-pink.svg" alt="Логотип Jelly Cat" /></div>
             <p class="footer__contacts">ООО «ВИР ХОЛДИНГ» <br>Россия, г. Калининград <br>ул. Театральная, 35,
                 офис&nbsp;616</p><a class="footer__phone" href="tel:88002224608">8&nbsp;(800)&nbsp;222&nbsp;46&nbsp;08</a>
         </div>
@@ -374,7 +380,10 @@
                 соблюдения конфиденциальности.</p>
         </div>
     </div>
-    <script src="scripts.js"></script>
+
+    <?php wp_footer(); ?>
+
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/scripts.js"></script>
 </body>
 
 </html>
