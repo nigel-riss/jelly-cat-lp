@@ -5,14 +5,14 @@
     $c_name         = $_POST["contact_name"];
     $c_email        = $_POST["contact_email"];
     $c_phone        = $_POST["contact_phone"];
-    // $to = 'lid@izi-way.ru';
-    $to = 'mr.kurenkov@gmail.com';
-    $subject = 'Заявка с сайта lensvens.ru';
+    $to = 'lid@jellycat.store';
+    
+    $subject = 'Заявка с сайта jellycat.online';
     $headers = array('Content-Type: text/html; charset=UTF-8');
     $content = "Имя: " . htmlspecialchars($c_name) . "<br>Email: " . htmlspecialchars($c_email) . "<br>Телефон: " .htmlspecialchars($c_phone);
     
-    // $success = wp_mail( $to, $subject, $content, $headers );
-    $success = 1;
+    $success = wp_mail( $to, $subject, $content, $headers );
+    // $success = 1;
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@
                 <div class="feedback__text">
                     <p>Здравствуйте, <?php echo htmlspecialchars($c_name); ?>!<br> Ваша заявка успешно отправлена.</p>
                     <p>Благодарим Вас за интерес к франшизе. Наши менеджеры в скором времени отправят на Ваш почтовый адрес подробную презентацию и чуть позже свяжутся с Вами.</p>
-                    <p>C уважением, команда IZIway.</p>
+                    <p>C уважением, команда Jelly Cat.</p>
                 <div>
 
                 <div class="feedback__button">
@@ -55,7 +55,7 @@
                 <div class="feedback__text">
                     <p>Здравствуйте, <?php echo htmlspecialchars($c_name); ?>!<br> Что-то пошло не так и ваша заявка не может быть отправлена.</p>
                     <p>Пожалуйста попробуйте позже или свяжитесь с нашими менеджерами по телефону <a class="feedback__phone" href="tel:88002224608">8&nbsp;(800)&nbsp;222&nbsp;46&nbsp;08</a>.</p>
-                    <p>C уважением, команда IZIway.</p>
+                    <p>C уважением, команда Jelly Cat.</p>
                 <div>
 
                 <div class="feedback__button">
