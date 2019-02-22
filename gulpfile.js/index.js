@@ -6,6 +6,7 @@ const server = require('browser-sync').create();
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const optimiseCSS = require('gulp-csso');
+const rename = require('gulp-rename');
 
 
 // Paths
@@ -16,6 +17,7 @@ const dirs = {
   js: './src/js/**/*.js',
   php: './src/php/*.php',
   docs: './docs',
+  wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat'
 };
 
 
@@ -65,11 +67,11 @@ let compileStyles = () => (
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(optimiseCSS())
+    .pipe(optimiseCSS({ comments: 'exclamation' }))
     .pipe(gulp.dest(dirs.docs))
     .pipe(server.reload({stream: true}))
-    // .pipe(rename('style.css'))
-    // .pipe(gulp.dest(dirs.wp))
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest(dirs.wp))
 );
 
 
@@ -79,7 +81,7 @@ let compileStyles = () => (
 let copyScripts = () => (
   gulp.src(dirs.js)
     .pipe(gulp.dest(dirs.docs))
-    // .pipe(gulp.dest(dirs.wp))
+    .pipe(gulp.dest(dirs.wp))
 );
 
 
