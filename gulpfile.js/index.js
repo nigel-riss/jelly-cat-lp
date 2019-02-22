@@ -79,7 +79,7 @@ let compileStyles = () => (
 let copyScripts = () => (
   gulp.src(dirs.js)
     .pipe(gulp.dest(dirs.docs))
-    .pipe(gulp.dest(dirs.wp))
+    // .pipe(gulp.dest(dirs.wp))
 );
 
 
