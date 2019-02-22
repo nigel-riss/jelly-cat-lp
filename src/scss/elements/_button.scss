@@ -21,6 +21,7 @@
     background-color: $purple;
     border-radius: 25px;
     box-shadow: 0 5px 20px 0 rgba($dark, 0.3);
+    transition: all 0.25s ease-out;
 
     @include atTablet {
         // box model
@@ -47,6 +48,15 @@
         // typography
         font-size: 1.25rem;
     }
+}
+
+.button:hover {
+    // typography
+    color: $diamond;
+
+    // visual
+    background-color: $light;
+    box-shadow: 0 0 10px 0 rgba($dark, 0.3);
 }
 
 .button--260 {
