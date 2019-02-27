@@ -73,7 +73,7 @@
             <header class="format__header">
                 <h2 class="section-title">Формат магазина <br>Jelly Cat</h2>
                 <p class="section-subtitle">Jelly Cat — интернет–магазин сладостей и&nbsp;сладких подарков.
-                    В&nbsp;вашем распоряжении будут такие площадки, как: сайт–магазин, VK, Instagram, Facebook, Ok.ru</p>
+                    В&nbsp;вашем распоряжении будут такие площадки, как: VK, Instagram, Facebook, Ok.ru</p>
             </header>
         </section>
 
@@ -270,7 +270,7 @@
             <header class="prices__header">
                 <h2 class="section-title section-title--light">Стоимость франшизы <span class="hidden creditgoods">Jelly Cat Франшиза</span></h2>
             </header>
-            <p class="prices__count"><strong class="creditprice">100&nbsp;000</strong> ₽</p>
+            <p class="prices__count"><strong class="creditprice">55&nbsp;000</strong> ₽</p>
             <div class="prices__buttons">
                 <a class="button button--260 gocredit" href="javascript:void(0);">Купить в кредит</a>
                 <a class="button button--260 contact-button" href="#">Купить</a></div>

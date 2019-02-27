@@ -43,7 +43,7 @@
                 <div>
 
                 <div class="feedback__button">
-                    <a class="button" href="#" onclick="window.history.go(-1); return false;">Вернутьсяна главную</a>
+                    <a class="button" href="#" onclick="window.history.go(-1); return false;">Вернуться на сайт</a>
                 </div>
             </div>
             
@@ -59,7 +59,7 @@
                 <div>
 
                 <div class="feedback__button">
-                    <a class="button" href="" onclick="window.history.go(-1); return false;">Вернутьсяна главную</a>
+                    <a class="button" href="" onclick="window.history.go(-1); return false;">Вернуться на сайт</a>
                 </div>
             </div>
         <?php } ?>
