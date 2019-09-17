@@ -42,29 +42,32 @@ contactPopupCover.addEventListener('click', function (evt) {
 });
 
 
-const dotsRellax = new Rellax('.deco-layer--dots', {
-  speed: 9,
-  center: true,
-  wrapper: null,
-  round: true,
-  vertical: true,
-  horizontal: true,
-});
-
-const dots2Rellax = new Rellax('.deco-layer--dots-2', {
-  speed: 3,
-  center: true,
-  wrapper: null,
-  round: true,
-  vertical: true,
-  horizontal: true,
-});
-
-const imgRellax = new Rellax('.deco-layer--images', {
-  speed: 2,
-  center: true,
-  wrapper: null,
-  round: true,
-  vertical: true,
-  horizontal: true,
-});
+if (window && window.innerWidth > 1000)
+{
+  const dotsRellax = new Rellax('.deco-layer--dots', {
+    speed: 9,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false,
+  });
+  
+  const dots2Rellax = new Rellax('.deco-layer--dots-2', {
+    speed: 3,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false,
+  });
+  
+  const imgRellax = new Rellax('.deco-layer--images', {
+    speed: 2,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false,
+  });
+}
