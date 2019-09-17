@@ -4,6 +4,9 @@
 
     // visual
     border-radius: 50%;
+
+    // visual
+    box-shadow: 10px 20px 20px rgba($dark, 0.1);
 }
 
 .dot--s {
@@ -232,7 +235,7 @@
     @include atDesktopM {
         // positioning
         left: -20px;
-        top: 380px;
+        top: 480px;
     }
 }
 
@@ -254,8 +257,8 @@
 
     @include atDesktopM {
         // positioning
-        bottom: 100px;
-        right: 45%;
+        bottom: 0;
+        right: 75%;
     }
 }
 
