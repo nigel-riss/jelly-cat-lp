@@ -2,7 +2,6 @@
 
 import Rellax from 'rellax';
 
-
 // Policy popup window
 var policyPopup = document.querySelector('.policy-popup');
 var policyPopupClose = document.querySelector('.policy-popup__close');
@@ -44,6 +43,7 @@ contactPopupCover.addEventListener('click', function (evt) {
 
 if (window && window.innerWidth > 1000)
 {
+  // Parallax with Rellax
   const dotsRellax = new Rellax('.deco-layer--dots', {
     speed: 9,
     center: true,

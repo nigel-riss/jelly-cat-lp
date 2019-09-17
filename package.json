@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/drsg85/jelly-cat-lp#readme",
   "dependencies": {
-    "rellax": "^1.10.0"
+    "rellax": "^1.10.0",
+    "scroll-entrance": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
