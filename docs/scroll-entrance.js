@@ -1,13 +1,17 @@
 
 (function() {
 
+      if (!(window && window.innerWidth > 1000)) {
+        return;
+      }
+
       //Create the object for the entrance plugin
       entrance = {};
 
       //Set up defaults
       entrance.duration = "1000";
-      entrance.distance = "100";
-      entrance.heightOffset = 200;
+      entrance.distance = "200";
+      entrance.heightOffset = 10;
 
       entrance.isElemInView = function(elem) {
 
