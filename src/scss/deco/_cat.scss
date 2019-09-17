@@ -7,6 +7,19 @@
     background-size: contain;
 }
 
+@keyframes move-cat-slp-1 {
+    0%   { transform: rotate(-60deg); }
+    50% { transform: rotate(-70deg); }
+    100% { transform: rotate(-60deg); }
+}
+
+@keyframes move-cat-pur-1 {
+    0%   { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
 .cat--sml-1 {
     // positioning
     transform: rotate(35deg);
@@ -38,6 +51,12 @@
         // box model
         height: 192px;
         width: 147px;
+
+        transform-origin: 50% 50%;
+        animation-name: move-cat;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -72,6 +91,12 @@
         // box model
         height: 480px;
         width: 480px;
+
+        transform-origin: 50% 50%;
+        animation-name: move-cat-slp-1;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -106,6 +131,12 @@
         // box model
         height: 465px;
         width: 465px;
+
+        transform-origin: 50% 50%;
+        // animation-name: move-cat-pur-1;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
     }
 }
 

@@ -10,6 +10,11 @@
     // border: 1px solid green;
 }
 
+.deco-layer--header.deco-layer--blobs {
+    -webkit-filter: brightness(1.4) contrast(40);
+    filter: brightness(1.4) contrast(40);
+}
+
 .deco-layer--header {
     // positioning
     left: 50%;

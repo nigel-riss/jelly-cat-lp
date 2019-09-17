@@ -12,13 +12,13 @@ const webpack = require('webpack-stream');
 
 // Paths
 const dirs = {
-  pug: './src/pug/**/*.pug',
+  pug: './src/pug/*.pug',
   scss: './src/**/*.scss',
-  styles: './src/scss/styles.scss',
+  styles: './src/scss/style.scss',
   js: './src/js/**/*.js',
   php: './src/php/*.php',
   docs: './docs',
-  wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat',
+  // wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat',
 };
 
 
@@ -35,20 +35,20 @@ const webpackConfig = {
   // mode: 'production',
   mode: 'development',
 
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.m?js$/,
-  //       exclude: /(node_modules|bower_components)/,
-  //       use: {
-  //         loader: 'babel-loader',
-  //         options: {
-  //           presets: ['@babel/preset-env'],
-  //         },
-  //       },
-  //     },
-  //   ],
-  // },
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+    ],
+  },
 };
 
 
@@ -56,7 +56,7 @@ const webpackConfig = {
  * Runs BrowserSync server
  * @param {Function} cb callback
  */
-function initBrowserSync (cb) {
+const initBrowserSync = (cb) => {
   server.init({
     server: {
       baseDir: dirs.docs,
@@ -72,7 +72,7 @@ function initBrowserSync (cb) {
  * Reloads BrowserSync Server
  * @param {Function} cb callback
  */
-function reloadBrowserSync (cb) {
+const reloadBrowserSync = (cb) => {
   server.reload();
 
   cb();
@@ -82,7 +82,7 @@ function reloadBrowserSync (cb) {
 /**
  * Renders html from pug
  */
-let renderPug = (cb) => {
+const renderPug = (cb) => {
   gulp.src(dirs.pug)
     .pipe(pug())
     .pipe(gulp.dest(dirs.docs));
@@ -95,7 +95,7 @@ let renderPug = (cb) => {
  * Compiles scss files to styles.css
  * And move to docs and wp directories
  */
-let compileStyles = (cb) => {
+const compileStyles = (cb) => {
   gulp.src(dirs.styles)
     .pipe(sass())
     .pipe(autoprefixer({
@@ -110,8 +110,7 @@ let compileStyles = (cb) => {
     .pipe(optimiseCSS({ comments: 'exclamation' }))
     .pipe(gulp.dest(dirs.docs))
     .pipe(server.reload({stream: true}))
-    .pipe(rename('style.css'))
-    .pipe(gulp.dest(dirs.wp));
+    // .pipe(gulp.dest(dirs.wp));
 
   cb();
 };
@@ -121,7 +120,7 @@ let compileStyles = (cb) => {
  * Compiles js scripts
  * and copies to docs and wp directories
  */
-let compileScripts = (cb) => {
+const compileScripts = (cb) => {
   gulp.src(dirs.js)
     .pipe(webpack(webpackConfig))
     .pipe(gulp.dest(dirs.docs))
@@ -133,7 +132,7 @@ let compileScripts = (cb) => {
 /**
  * Copies PHP files to wordpress theme directory
  */
-let copyPHP = (cb) => {
+const copyPHP = (cb) => {
   gulp.src(dirs.php)
     .pipe(gulp.dest(dirs.wp));
 
@@ -144,7 +143,7 @@ let copyPHP = (cb) => {
 /**
  * Watches source files
  */
-let watchFiles = () => {
+const watchFiles = () => {
   gulp.watch(dirs.pug, gulp.series(renderPug, reloadBrowserSync));
   gulp.watch(dirs.scss, gulp.series(compileStyles));
   gulp.watch(dirs.js, gulp.series(compileScripts, reloadBrowserSync));
