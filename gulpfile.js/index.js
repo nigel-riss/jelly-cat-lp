@@ -81,6 +81,7 @@ const reloadBrowserSync = (cb) => {
 
 /**
  * Renders html from pug
+ * @param {Function} cb callback
  */
 const renderPug = (cb) => {
   gulp.src(dirs.pug)
@@ -94,6 +95,7 @@ const renderPug = (cb) => {
 /**
  * Compiles scss files to styles.css
  * And move to docs and wp directories
+ * @param {Function} cb callback
  */
 const compileStyles = (cb) => {
   gulp.src(dirs.styles)
@@ -119,6 +121,7 @@ const compileStyles = (cb) => {
 /**
  * Compiles js scripts
  * and copies to docs and wp directories
+ * @param {Function} cb callback
  */
 const compileScripts = (cb) => {
   gulp.src(dirs.js)
@@ -131,6 +134,7 @@ const compileScripts = (cb) => {
 
 /**
  * Copies PHP files to wordpress theme directory
+ * @param {Function} cb callback
  */
 const copyPHP = (cb) => {
   gulp.src(dirs.php)
@@ -153,8 +157,10 @@ const watchFiles = () => {
 
 const watch = gulp.parallel(watchFiles, initBrowserSync);
 
+// Tasks
 exports.wordpress = copyPHP;
 exports.scripts = compileScripts;
 exports.styles = compileStyles;
 
+// Watch task
 exports.watch = watch;
