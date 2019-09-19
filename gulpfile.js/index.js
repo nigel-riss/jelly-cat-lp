@@ -6,8 +6,6 @@ const server = require('browser-sync').create();
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const optimiseCSS = require('gulp-csso');
-const rename = require('gulp-rename');
-const embedSVG = require('gulp-embed-svg');
 const webpack = require('webpack-stream');
 
 
@@ -67,7 +65,7 @@ const initBrowserSync = (cb) => {
   });
 
   cb();
-}
+};
 
 
 /**
@@ -87,9 +85,6 @@ const reloadBrowserSync = (cb) => {
 const renderPug = (cb) => {
   gulp.src(dirs.pug)
     .pipe(pug())
-    // .pipe(embedSVG({
-    //   root: './src/',
-    // }))
     .pipe(gulp.dest(dirs.docs));
 
   cb();
