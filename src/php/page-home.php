@@ -26,12 +26,14 @@
     <header class="header">
         <div class="header__deco">
             <div class="deco-layer deco-layer--header deco-layer--dots">
-                <div class="dot dot--s dot--org dot--1"></div>
-                <div class="dot dot--s dot--red dot--2"></div>
                 <div class="dot dot--m dot--pur dot--3"></div>
                 <div class="dot dot--l dot--org dot--4"></div>
             </div>
-            <div class="deco-layer deco-layer--header deco-layer--images">
+            <div class="deco-layer deco-layer--header deco-layer--dots-2">
+                <div class="dot dot--s dot--org dot--1"></div>
+                <div class="dot dot--s dot--red dot--2"></div>
+            </div>
+            <div class="deco-layer deco-layer--header deco-layer--cats">
                 <div class="cat cat--pur-1"></div>
                 <div class="cat cat--slp-1"></div>
                 <div class="blob blob--3"></div>
@@ -45,8 +47,7 @@
         <div class="header__logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-white.svg" alt="Логотип франшизы Jelly Cat" /></div>
         <div class="header__caption">
             <h1 class="header__title">Jelly Cat — франшиза интернет магазина сладостей со всего мира</h1>
-            <p class="header__text">Яркие, вкусные, запоминающиеся, притягательные. Это&nbsp;выделяет нас на&nbsp;рынке
-                сладостей и&nbsp;является весомым конкурентным преимуществом.</p>
+            <p class="header__text">Яркие, вкусные, запоминающиеся, притягательные. Это&nbsp;выделяет нас на&nbsp;рынке сладостей и&nbsp;является весомым конкурентным преимуществом.</p>
         </div>
         <div class="header__button"><a class="button contact-button" href="#">Узнать подробнее</a></div>
     </header>
@@ -58,10 +59,12 @@
         <section class="format">
             <div class="format__deco">
                 <div class="deco-layer deco-layer--dots">
-                    <div class="dot dot--s dot--red dot--5"></div>
-                    <div class="dot dot--s dot--red dot--6"></div>
                     <div class="dot dot--l dot--org dot--7"></div>
                     <div class="dot dot--l dot--pur dot--8"></div>
+                </div>
+                <div class="deco-layer deco-layer--dots-2">
+                    <div class="dot dot--s dot--red dot--5"></div>
+                    <div class="dot dot--s dot--red dot--6"></div>
                 </div>
                 <div class="deco-layer deco-layer--images">
                     <div class="deco deco--ok"></div>
@@ -71,9 +74,8 @@
                 </div>
             </div>
             <header class="format__header">
-                <h2 class="section-title">Формат магазина <br>Jelly Cat</h2>
-                <p class="section-subtitle">Jelly Cat — интернет–магазин сладостей и&nbsp;сладких подарков.
-                    В&nbsp;вашем распоряжении будут такие площадки, как: VK, Instagram, Facebook, Ok.ru</p>
+                <h2 class="section-title" data-entrance="from-right" data-entrance-delay="100">Формат магазина <br>Jelly Cat</h2>
+                <p class="section-subtitle" data-entrance="from-left" data-entrance-delay="100">Jelly Cat — интернет–магазин сладостей и&nbsp;сладких подарков. В&nbsp;вашем распоряжении будут такие площадки, как: сайт–магазин, VK, Instagram, Facebook, Ok.ru</p>
             </header>
         </section>
 
@@ -94,24 +96,25 @@
                 <h2 class="section-title section-title--light">Кому подойдёт <br>такой бизнес</h2>
             </header>
             <div class="who-suit__content">
-                <article class="role">
+                <article class="role" data-entrance="from-bottom" data-entrance-delay="100">
                     <div class="role__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/employer.svg" alt="Иконка предпринимателя" /></div>
                     <h3 class="role__title">Предпринимателям</h3>
                     <p class="role__desc">Создать ещё один источник дохода и&nbsp;зарабатывать в&nbsp;разы больше</p>
                 </article>
-                <article class="role">
+                <article class="role" data-entrance="from-bottom" data-entrance-delay="350">
                     <div class="role__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/mother.svg" alt="Иконка мамы" /></div>
                     <h3 class="role__title">Мамам в декрете</h3>
                     <p class="role__desc">Начать собственное дело, при этом зарабатывая находясь рядом с&nbsp;семьёй</p>
                 </article>
-                <article class="role">
+                <article class="role" data-entrance="from-bottom" data-entrance-delay="600">
                     <div class="role__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/student.svg" alt="Иконка студента" /></div>
                     <h3 class="role__title">Студентам</h3>
-                    <p class="role__desc">Для тех, кто хочет перестать жить за&nbsp;счёт родителей и&nbsp;перестать
-                        изматывать себя на&nbsp;копеечных подработках</p>
+                    <p class="role__desc">Для тех, кто хочет перестать жить за&nbsp;счёт родителей и&nbsp;перестать изматывать себя на&nbsp;копеечных подработках</p>
                 </article>
             </div>
-            <div class="who-suit__button"><a class="button button--red contact-button" href="#">Мне подходит</a></div>
+            <div class="who-suit__button">
+                <a class="button button--red contact-button" href="#">Мне подходит</a>
+            </div>
         </section>
 
         <!-- For You -->
@@ -120,23 +123,23 @@
                 <h2 class="section-title section-title--purple">Этот бизнес для Вас, <br>если Вы:</h2>
             </header>
             <div class="for-you__content">
-                <article class="quality">
+                <article class="quality" data-entrance="fade" data-entrance-delay="100">
                     <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/hand.svg" alt="Иконка руки с монетой" /></div>
                     <h3 class="quality__title">Хотите начать своё&nbsp;дело без&nbsp;внушительных затрат</h3>
                 </article>
-                <article class="quality">
+                <article class="quality" data-entrance="fade" data-entrance-delay="350">
                     <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/money.svg" alt="Иконка стопки монет" /></div>
                     <h3 class="quality__title">Настроены изменить своё финансовое положение</h3>
                 </article>
-                <article class="quality">
+                <article class="quality" data-entrance="fade" data-entrance-delay="600">
                     <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/laugh.svg" alt="Иконка смеющихся людей" /></div>
                     <h3 class="quality__title">Любите общение <br>с&nbsp;людьми</h3>
                 </article>
-                <article class="quality">
+                <article class="quality" data-entrance="fade" data-entrance-delay="850">
                     <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/shield.svg" alt="Иконка щита" /></div>
                     <h3 class="quality__title">Развиваетесь и&nbsp;любите <br>узнавать новое</h3>
                 </article>
-                <article class="quality">
+                <article class="quality" data-entrance="fade" data-entrance-delay="1100">
                     <div class="quality__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/development.svg" alt="Иконка графика" /></div>
                     <h3 class="quality__title">Несёте ответственность <br>за&nbsp;свою жизнь</h3>
                 </article>
@@ -166,17 +169,15 @@
             </header>
             <div class="advantages__content">
                 <ul class="feature-list">
-                    <li class="feature feature--adv"><strong>1 месяц на&nbsp;полную окупаемость и&nbsp;выход
-                            на&nbsp;прибыль</strong></li>
-                    <li class="feature feature--adv">Опыт основателей в&nbsp;бизнесе более 10&nbsp;лет</li>
-                    <li class="feature feature--adv">Обучающая информация и&nbsp;брендбук компании — 1&nbsp;час работы
-                        в день, можно совмещать с&nbsp;учёбой и&nbsp;работой</li>
-                    <li class="feature feature--adv">Быстрая поддержка по&nbsp;любым вопросам</li>
-                    <li class="feature feature--adv">Постоянно обновляющийся каталог качественной продукции
-                        от&nbsp;производителя</li>
-                    <li class="feature feature--adv">Отлаженная и&nbsp;быстрая логистика. Приём заказов круглосуточно</li>
-                    <li class="feature feature--adv">Доход позволит Вам нанять менеджера и&nbsp;только забирать деньги
-                        с&nbsp;бизнеса, бизнес станет для&nbsp;Вас пассивным заработком</li>
+                    <li class="feature feature--adv" data-entrance="fade" data-entrance-delay="100">
+                        <strong>1 месяц на&nbsp;полную окупаемость и&nbsp;выход на&nbsp;прибыль</strong>
+                    </li>
+                    <li class="feature feature--adv" data-entrance="fade" data-entrance-delay="300">Опыт основателей в&nbsp;бизнесе более 10&nbsp;лет</li>
+                    <li class="feature feature--adv" data-entrance="fade" data-entrance-delay="500">Обучающая информация и&nbsp;брендбук компании — 1&nbsp;час работы в день, можно совмещать с&nbsp;учёбой и&nbsp;работой</li>
+                    <li class="feature feature--adv" data-entrance="fade" data-entrance-delay="700">Быстрая поддержка по&nbsp;любым вопросам</li>
+                    <li class="feature feature--adv" data-entrance="fade" data-entrance-delay="900">Постоянно обновляющийся каталог качественной продукции от&nbsp;производителя</li>
+                    <li class="feature feature--adv" data-entrance="fade" data-entrance-delay="1100">Отлаженная и&nbsp;быстрая логистика. Приём заказов круглосуточно</li>
+                    <li class="feature feature--adv" data-entrance="fade" data-entrance-delay="1300">Доход позволит Вам нанять менеджера и&nbsp;только забирать деньги с&nbsp;бизнеса, бизнес станет для&nbsp;Вас пассивным заработком</li>
                 </ul>
             </div>
             <div class="advantages__button"><a class="button contact-button" href="#">Узнать подробнее</a></div>
@@ -197,20 +198,15 @@
             </header>
             <div class="u-get__content">
                 <ul class="feature-list feature-list--get">
-                    <li class="feature feature--get">Готовую бизнес–модель с&nbsp;доходностью от&nbsp;50&nbsp;000₽
-                        в&nbsp;месяц</li>
-                    <li class="feature feature--get">Обучающие материалы и поддержку 24/7</li>
-                    <li class="feature feature--get">Продвижение от профессионалов в Instagram. В холдинг JAST входит
-                        федеральная сеть маркетинговых агентств</li>
-                    <li class="feature feature--get">Фирменный стиль компании, логотипы, визитки, каталоги продукции</li>
-                    <li class="feature feature--get">Бесплатная и быстрая доставка товара через ответственного
-                        менеджера по закупкам</li>
-                    <li class="feature feature--get">Персональный менеджер, который решит любую проблему в любое время
-                        суток</li>
-                    <li class="feature feature--get">Доступ к огромному ассортименту сладостей + постоянное пополнение</li>
-                    <li class="feature feature--get">Скрипты ведения переговоров</li>
-                    <li class="feature feature--get">Маркетинговая поддержка, привлечение целевых пользователей,
-                        настройка рекламных кампаний</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="100">Готовую бизнес–модель с&nbsp;доходностью от&nbsp;50&nbsp;000₽ в&nbsp;месяц</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="300">Обучающие материалы и поддержку 24/7</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="500">Продвижение от профессионалов в Instagram. В холдинг JAST входит федеральная сеть маркетинговых агентств</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="700">Фирменный стиль компании, логотипы, визитки, каталоги продукции</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="900">Бесплатная и быстрая доставка товара через ответственного менеджера по закупкам</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="1100">Персональный менеджер, который решит любую проблему в любое время суток</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="1300">Доступ к огромному ассортименту сладостей + постоянное пополнение</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="1500">Скрипты ведения переговоров</li>
+                    <li class="feature feature--get" data-entrance="fade" data-entrance-delay="1700">Маркетинговая поддержка, привлечение целевых пользователей, настройка рекламных кампаний</li>
                 </ul>
             </div>
         </section>
@@ -236,18 +232,15 @@
                 <h2 class="section-title section-title--light">При открытии <br>бизнеса</h2>
             </header>
             <div class="opening__content">
-                <p class="work-part"><span class="work-part__percent">80%</span> работы мы сделаем за&nbsp;Вас: <br>создадим
-                    Instagram магазин, поможем в&nbsp;его продвижении и&nbsp;направим поток&nbsp;клиентов.</p>
-                <p class="work-part"><span class="work-part__percent work-part__percent--crimson">20%</span> работы
-                    останется за Вами: <br>обрабатывать входящие заявки и&nbsp;получать доход.</p>
+                <p class="work-part" data-entrance="from-left" data-entrance-delay="100"><span class="work-part__percent">80%</span> работы мы сделаем за&nbsp;Вас: <br>создадим Instagram магазин, поможем в&nbsp;его продвижении и&nbsp;направим поток&nbsp;клиентов.</p>
+                <p class="work-part" data-entrance="from-right" data-entrance-delay="500"><span class="work-part__percent work-part__percent--crimson">20%</span> работы останется за Вами: <br>обрабатывать входящие заявки и&nbsp;получать доход.</p>
             </div>
             <div class="opening__button"><a class="button contact-button button--red" href="#">Узнать подробнее</a></div>
         </section>
 
         <!-- Economy -->
         <section class="economy">
-            <p class="economy__text"><span class="economy__value">до <strong>700&nbsp;000</strong> ₽</span> вы сможете
-                заработать <br>за&nbsp;год, работая с нами</p>
+            <p class="economy__text" data-entrance="from-top" data-entrance-delay="100"><span class="economy__value">до <strong>700&nbsp;000</strong> ₽</span> вы сможете заработать <br>за&nbsp;год, работая с нами</p>
             <div class="economy__button"><a class="button contact-button button--red" href="#">Начать зарабатывать</a></div>
         </section>
 
@@ -272,8 +265,8 @@
             </header>
             <p class="prices__count"><strong class="creditprice">55&nbsp;000</strong> ₽</p>
             <div class="prices__buttons">
-                <a class="button button--260 gocredit" href="javascript:void(0);">Купить в кредит</a>
-                <a class="button button--260 contact-button" href="#">Купить</a></div>
+                <a class="button button--260 gocredit" href="javascript:void(0);" data-entrance="from-left" data-entrance-delay="100">Купить в кредит</a>
+                <a class="button button--260 contact-button" href="#" data-entrance="from-right" data-entrance-delay="500">Купить</a></div>
         </section>
 
         <!-- Remote -->
@@ -287,9 +280,7 @@
             </div>
             <header class="remote__header">
                 <h2 class="section-title">Удалённый контроль бизнеса</h2>
-                <p class="section-subtitle section-subtitle--dark">Бизнес полностью автоматизирован, не&nbsp;требует
-                    от&nbsp;вас содержания офиса и&nbsp;штата. В&nbsp;среднем, по&nbsp;истечению двух месяцев
-                    с&nbsp;момента старта, наши партнёры делегируют управление бизнесом.</p>
+                <p class="section-subtitle section-subtitle--dark">Бизнес полностью автоматизирован, не&nbsp;требует от&nbsp;вас содержания офиса и&nbsp;штата. В&nbsp;среднем, по&nbsp;истечению двух месяцев с&nbsp;момента старта, наши партнёры делегируют управление бизнесом.</p>
             </header>
             <div class="remote__button"><a class="button contact-button button--red" href="#">Оставить заявку</a></div>
         </section>
@@ -297,32 +288,43 @@
         <!-- About -->
         <section class="about">
             <div class="about__deco">
-                <div class="deco-layer deco-layer--about deco-layer--images">
-                    <div class="cat cat--pur-2"></div>
-                    <div class="cat cat--slp-2"></div>
+                <div class="deco-layer deco-layer--about deco-layer--cats">
+                    <div class="cat cat--slp-2" data-entrance="from-bottom" data-entrance-delay="10"></div>
+                    <div class="cat cat--pur-2" data-entrance="from-bottom" data-entrance-delay="500"></div>
                 </div>
             </div>
             <header class="about__header">
                 <h2 class="section-title section-title--light">О нас пишут</h2>
             </header>
             <div class="about__quotes">
-                <article class="quote">
-                    <p class="quote__text">Компании Jast Holding мало места на&nbsp;рынке России, и&nbsp;она выходит
-                        на&nbsp;страны СНГ</p>
+                <article class="quote" data-entrance="from-left" data-entrance-delay="100">
+                    <p class="quote__text">Компании Jast Holding мало места на&nbsp;рынке России, и&nbsp;она выходит на&nbsp;страны СНГ</p>
                     <p class="quote__signature">Forbes</p>
                 </article>
-                <article class="quote">
+                <article class="quote" data-entrance="from-right" data-entrance-delay="500">
                     <p class="quote__text">Как бизнес-идеи калининградцев зарабатывают миллионы по&nbsp;всему миру</p>
                     <p class="quote__signature">Комсомольская правда</p>
                 </article>
             </div>
             <div class="about__content">
-                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/forbes.svg" alt="Forbes" height="30" /></article>
-                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/beboss.png" alt="БиБосс" height="35" /></article>
-                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/24-mir.svg" alt="24 мир" height="45" /></article>
-                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/businessmens.svg" alt="Бизнесменс" height="20" /></article>
-                <article class="ref ref--spc"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/rbk.svg" alt="РБК" height="23" /></article>
-                <article class="ref"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/top-franchise.png" alt="TopFranchise.ru" height="23" /></article>
+                <article class="ref" data-entrance="from-bottom" data-entrance-delay="100">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/forbes.svg" alt="Forbes" height="30" />
+                </article>
+                <article class="ref" data-entrance="from-bottom" data-entrance-delay="300">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/beboss.png" alt="БиБосс" height="35" />
+                </article>
+                <article class="ref" data-entrance="from-bottom" data-entrance-delay="500">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/24-mir.svg" alt="24 мир" height="45" />
+                </article>
+                <article class="ref" data-entrance="from-bottom" data-entrance-delay="700">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/businessmens.svg" alt="Бизнесменс" height="20" />
+                </article>
+                <article class="ref ref--spc" data-entrance="from-bottom" data-entrance-delay="900">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/rbk.svg" alt="РБК" height="23" />
+                </article>
+                <article class="ref" data-entrance="from-bottom" data-entrance-delay="1100">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/top-franchise.png" alt="TopFranchise.ru" height="23" />
+                </article>
             </div>
         </section>
     </main>
@@ -415,6 +417,7 @@
     <?php wp_footer(); ?>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/scripts.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/scroll-entrance.js"></script>
 </body>
 
 </html>

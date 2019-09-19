@@ -20,6 +20,7 @@ const dirs = {
   php: './src/php/*.php',
   docs: './docs',
   // wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat',
+  wp: 'F:/xampp/htdocs/jellycat/wp-content/themes/jelly-cat',
 };
 
 
@@ -114,7 +115,7 @@ const compileStyles = (cb) => {
     .pipe(optimiseCSS({ comments: 'exclamation' }))
     .pipe(gulp.dest(dirs.docs))
     .pipe(server.reload({stream: true}))
-    // .pipe(gulp.dest(dirs.wp));
+    .pipe(gulp.dest(dirs.wp));
 
   cb();
 };
@@ -127,8 +128,8 @@ const compileStyles = (cb) => {
 const compileScripts = (cb) => {
   gulp.src(dirs.js)
     .pipe(webpack(webpackConfig))
-    .pipe(gulp.dest(dirs.docs));
-    // .pipe(gulp.dest(dirs.wp));
+    .pipe(gulp.dest(dirs.docs))
+    .pipe(gulp.dest(dirs.wp));
 
   cb();
 };
