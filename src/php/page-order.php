@@ -2,6 +2,10 @@
     /*
         Template Name: Order Page
     */
+    $SITE_KEY = "6LdCXLkUAAAAAHeruL3pKhlpsPkQ9_FRr64PKI9t";
+    $SECRET_KEY = "6LdCXLkUAAAAAKQUierw8GRZXo4mbxC3YyMGlxv2";
+
+    // Getting POST data
     $c_name         = $_POST["contact_name"];
     $c_email        = $_POST["contact_email"];
     $c_phone        = $_POST["contact_phone"];
