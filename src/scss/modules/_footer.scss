@@ -191,3 +191,28 @@
         line-height: 2;
     }
 }
+
+.footer__google {
+    // box model
+    margin-bottom: 2rem;
+
+    // typography
+    line-height: 1.5;
+
+    @include atTablet {
+        // box model
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    @include atDesktopS {
+        // box model
+        max-width: 200px;
+    }
+}
+
+.footer__google a {
+    // typography
+    color: $crimson;
+}

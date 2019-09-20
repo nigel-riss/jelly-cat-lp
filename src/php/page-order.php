@@ -9,14 +9,26 @@
     $c_name         = $_POST["contact_name"];
     $c_email        = $_POST["contact_email"];
     $c_phone        = $_POST["contact_phone"];
-    $to = 'lid@jellycat.store';
-    
-    $subject = 'Заявка с сайта jellycat.online';
-    $headers = array('Content-Type: text/html; charset=UTF-8');
-    $content = "Имя: " . htmlspecialchars($c_name) . "<br>Email: " . htmlspecialchars($c_email) . "<br>Телефон: " .htmlspecialchars($c_phone);
-    
-    $success = wp_mail( $to, $subject, $content, $headers );
-    // $success = 1;
+    $g_recaptcha    = $_POST["g-recaptcha-response"];
+    // Checking if not a robot
+    function getCaptcha($secretToken) {
+        $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . "6LdCXLkUAAAAAKQUierw8GRZXo4mbxC3YyMGlxv2" . "&response=" . $secretToken);
+        $return = json_decode($response);
+        // print_r($return);
+        return ($return->success == true && $return->score > 0.5);
+    }
+
+    if (getCaptcha($g_recaptcha)) {
+        $to = 'lid@jellycat.store';
+        // $to = 'mr.kurenkov@gmail.com';
+        
+        $subject = 'Заявка с сайта jellycat.online';
+        $headers = array('Content-Type: text/html; charset=UTF-8');
+        $content = "Имя: " . htmlspecialchars($c_name) . "<br>Email: " . htmlspecialchars($c_email) . "<br>Телефон: " .htmlspecialchars($c_phone);
+        
+        $success = wp_mail( $to, $subject, $content, $headers );
+        // $success = 1;
+    }
 ?>
 
 <!DOCTYPE html>
