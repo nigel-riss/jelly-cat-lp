@@ -21,14 +21,17 @@
     if (getCaptcha($g_recaptcha)) {
         $to = 'lid@jellycat.store';
         // $to = 'mr.kurenkov@gmail.com';
+        // $bcc = 'mr.kurenkov@gmail.com';
         
         $subject = 'Заявка с сайта jellycat.online';
         $headers = array('Content-Type: text/html; charset=UTF-8');
         $content = "Имя: " . htmlspecialchars($c_name) . "<br>Email: " . htmlspecialchars($c_email) . "<br>Телефон: " .htmlspecialchars($c_phone);
         
         $success = wp_mail( $to, $subject, $content, $headers );
+        // wp_mail( $bcc, $subject, $content, $headers );
         // $success = 1;
     }
+    // $success = 1;
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +54,8 @@
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true,
-            webvisor:true
+            webvisor:true,
+            triggerEvent: true
         });
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/55447654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
@@ -90,8 +94,22 @@
             </div>
 
             <script>
-                yaCounter55447654.reachGoal('zayavka');
-                ga('send', 'event', 'form', 'submit', 'zayavka');
+                document.addEventListener('yacounter55447654inited', function() {
+                    yaCounter55447654.reachGoal('zayavka');
+                    // console.log('yandex goal sent');
+                });
+
+                function gaLoop() {
+                    if (typeof gtag != 'undefined') {
+                        // console.log('google goal sent');
+                        // ga('send', 'event', 'form', 'submit', 'zayavka');
+                    } else {
+                        // console.log('google waiting');
+                        setTimeout(gaLoop, 1000);
+                    }
+                };
+
+                gaLoop();
             </script>
             
         <?php } else {?>
