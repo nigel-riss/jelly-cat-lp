@@ -102,7 +102,7 @@
                 function gaLoop() {
                     if (typeof gtag != 'undefined') {
                         // console.log('google goal sent');
-                        // ga('send', 'event', 'form', 'submit', 'zayavka');
+                        gtag('event', 'Заявка', {'event_category': 'submit', 'event_action': 'zayavka'});
                     } else {
                         // console.log('google waiting');
                         setTimeout(gaLoop, 1000);
