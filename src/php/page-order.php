@@ -41,6 +41,32 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55447654, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/55447654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140014106-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-140014106-3');
+    </script>
+    <!-- /Global site tag (gtag.js) - Google Analytics -->
+
     <title>Купить франшизу Jelly Cat</title>
 
     <?php wp_head(); ?>
@@ -62,6 +88,11 @@
                     <a class="button" href="#" onclick="window.history.go(-1); return false;">Вернуться на сайт</a>
                 </div>
             </div>
+
+            <script>
+                yaCounter55447654.reachGoal('zayavka');
+                ga('send', 'event', 'form', 'submit', 'zayavka');
+            </script>
             
         <?php } else {?>
             

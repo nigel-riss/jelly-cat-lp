@@ -26,11 +26,11 @@
     <meta name="msapplication-TileColor" content="#b91d47">
     <meta name="msapplication-config" content="<?php bloginfo('stylesheet_directory'); ?>/favicon/browserconfig.xml?v=rMJBgWrjnK">
     <meta name="theme-color" content="#ffffff">
-
-    <title>Купить франшизу Jelly Cat</title>
+    <!-- /Favicon -->
 
     <!-- v-credit.su -->
     <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script>
+    <!-- /v-credit.su -->
 
     <?php wp_head(); ?>
 
@@ -43,6 +43,36 @@
             });
         });
     </script>
+    <!-- /reCaptcha -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55447654, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/55447654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140014106-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-140014106-3');
+    </script>
+    <!-- /Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Купить франшизу Jelly Cat</title>
 </head>
 
 <body>
@@ -287,7 +317,7 @@
             <header class="prices__header">
                 <h2 class="section-title section-title--light">Стоимость франшизы <span class="hidden creditgoods">Jelly Cat Франшиза</span></h2>
             </header>
-            <p class="prices__count"><strong class="creditprice">55&nbsp;000</strong> ₽</p>
+            <p class="prices__count"><strong class="creditprice">65&nbsp;000</strong> ₽</p>
             <div class="prices__buttons">
                 <a class="button button--260 gocredit" href="javascript:void(0);" data-entrance="from-left" data-entrance-delay="100">Купить в кредит</a>
                 <a class="button button--260 contact-button" href="#" data-entrance="from-right" data-entrance-delay="500">Купить</a></div>
