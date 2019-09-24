@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=2" />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('stylesheet_directory'); ?>/favicon/apple-touch-icon.png?v=rMJBgWrjnK">
@@ -317,10 +317,58 @@
             <header class="prices__header">
                 <h2 class="section-title section-title--light">Стоимость франшизы <span class="hidden creditgoods">Jelly Cat Франшиза</span></h2>
             </header>
-            <p class="prices__count"><strong class="creditprice">65&nbsp;000</strong> ₽</p>
-            <div class="prices__buttons">
-                <a class="button button--260 gocredit" href="javascript:void(0);" data-entrance="from-left" data-entrance-delay="100">Купить в кредит</a>
-                <a class="button button--260 contact-button" href="#" data-entrance="from-right" data-entrance-delay="500">Купить</a></div>
+            <div class="prices__content">
+                <article class="price-option">
+                    <h3 class="price-option__title creditgoods">Старт</h3>
+                    <ul class="price-option__features">
+                        <li class="price-option__feature">Бизнес-модель с&nbsp;доходностью от&nbsp;100&nbsp;000₽ в&nbsp;месяц</li>
+                        <li class="price-option__feature">Поддержка 24/7</li>
+                        <li class="price-option__feature">Продвижение от&nbsp;профессионалов в&nbsp;Instagram</li>
+                        <li class="price-option__feature">Фирменный стиль</li>
+                        <li class="price-option__feature">Персональный менеджер</li>
+                        <li class="price-option__feature">Бесплатная и&nbsp;быстрая доставка товара</li>
+                    </ul>
+                    <div class="price-option__buttons">
+                        <p class="price-option__price creditprice">65&nbsp;000₽</p>
+                        <p class="price-option__royalty">Роялти 2500₽</p>
+                        <a class="contact-button button button--red button--w100p" href="#">Купить</a>
+                        <br />
+                        <a class="price-option__credit gocredit" href="href="javascript:void(0);">Купить в&nbsp;кредит</a>
+                    </div>
+                </article>
+                <article class="price-option price-option--featured">
+                    <h3 class="price-option__title creditgoods">Стандарт</h3>
+                    <ul class="price-option__features">
+                        <li class="price-option__feature">Полностью включает пакет Старт</li>
+                        <li class="price-option__feature price-option__feature--plus">Гарантия получения до&nbsp;4000 целевых подписчиков</li>
+                        <li class="price-option__feature price-option__feature--plus">Настройка и&nbsp;запуск таргетированной рекламы в&nbsp;Instagram</li>
+                        <li class="price-option__feature price-option__feature--plus">Ноу–хау по&nbsp;продвижению в&nbsp;ВКонтакте</li>
+                        <li class="price-option__feature price-option__feature--plus">Каникулы от&nbsp;роялти для&nbsp;второго и&nbsp;третьего месяца работы</li>
+                    </ul>
+                    <div class="price-option__buttons">
+                        <p class="price-option__price creditprice">89&nbsp;000₽</p>
+                        <p class="price-option__royalty">Роялти 2500₽</p>
+                        <a class="contact-button button button--w100p" href="#">Купить</a>
+                        <br />
+                        <a class="price-option__credit-dark gocredit" href="href="javascript:void(0);">Купить в кредит</a>
+                    </div>
+                </article>
+                <article class="price-option">
+                    <h3 class="price-option__title creditgoods">Премиум</h3>
+                    <ul class="price-option__features">
+                        <li class="price-option__feature">Полностью включает LensVens Старт и&nbsp;Стандарт</li>
+                        <li class="price-option__feature price-option__feature--white-plus">ВКонтакте под ключ: оформление и&nbsp;ведение группы +&nbsp;1000 покупателей из&nbsp;Вашего города</li>
+                        <li class="price-option__feature price-option__feature--white-plus">Персональные вебинары и&nbsp;индивидуальное обучение по&nbsp;работе с&nbsp;клиентами и&nbsp;продвижению</li>
+                    </ul>
+                    <div class="price-option__buttons">
+                        <p class="price-option__price creditprice">110&nbsp;000₽</p>
+                        <p class="price-option__royalty">Роялти 2500₽</p>
+                        <a class="contact-button button button--red button--w100p" href="#">Купить</a>
+                        <br />
+                        <a class="price-option__credit gocredit" href="href="javascript:void(0);">Купить в кредит</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- Remote -->
@@ -395,14 +443,9 @@
             <a class="footer__phone" href="tel:88002224608">8&nbsp;(800)&nbsp;222&nbsp;46&nbsp;08</a>
         </div>
 
-        <div class="footer__google">
-            <!-- Нажимая на кнопку «Отправить», вы даёте согласие на обработку персональных данных 
-            <br>* - поля обязательные для заполнения
-            <br> -->
-            <br>Этот сайт защищён reCAPTCHA и&nbsp;Google. <a href="https://policies.google.com/privacy">Политика конфиденциальности</a> и&nbsp;<a href="https://policies.google.com/terms">условия использования</a> применяются.
-        </div>
-
-        <div class="footer__legals"><a class="footer__policy" href="#">Политика конфиденциальности</a>
+        <div class="footer__legals">
+            <p class="footer__google">Этот сайт защищён reCAPTCHA и&nbsp;Google. <a href="https://policies.google.com/privacy">Политика конфиденциальности</a> и&nbsp;<a href="https://policies.google.com/terms">условия использования</a> применяются.</p>
+            <a class="footer__policy" href="#">Политика конфиденциальности</a>
             <p class="footer__copy">Jelly Cat © 2019</p>
         </div>
     </footer>
