@@ -10,7 +10,7 @@
 
     @include atTablet {
         // box model
-        padding: 100px 80px;
+        padding: 100px 40px;
     }
 
     @include atDesktopS {
@@ -77,6 +77,10 @@
     }
 }
 
+.prices__deco {
+    // visual
+    pointer-events: none;
+}
 
 .prices__header {
     // box model
@@ -84,6 +88,15 @@
 
     // typography
     text-align: center;
+}
+
+.prices__content {
+    @include atTablet {
+        // box model
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
 }
 
 .prices__count {

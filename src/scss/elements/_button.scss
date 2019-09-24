@@ -77,3 +77,9 @@
     // visual
     background-color: $crimson;
 }
+
+.button--w100p {
+    // box model
+    min-width: inherit;
+    width: 100%;
+}

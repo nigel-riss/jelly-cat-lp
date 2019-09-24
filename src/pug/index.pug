@@ -233,11 +233,59 @@ html(lang="en")
                 header.prices__header
                     h2.section-title.section-title--light Стоимость франшизы
 
-                p.prices__count <strong>100&nbsp;000</strong> ₽
+                .prices__content
+                    article.price-option
+                        h3.price-option__title Старт
+                        ul.price-option__features
+                            li.price-option__feature Бизнес-модель с&nbsp;доходностью от&nbsp;100&nbsp;000₽ в&nbsp;месяц
+                            li.price-option__feature Поддержка 24/7
+                            li.price-option__feature Продвижение от&nbsp;профессионалов в&nbsp;Instagram
+                            li.price-option__feature Фирменный стиль
+                            li.price-option__feature Персональный менеджер
+                            li.price-option__feature Бесплатная и&nbsp;быстрая доставка товара
 
-                .prices__buttons
-                    a.button.button--260.contact-button(href="#" data-entrance="from-left" data-entrance-delay="100") Купить в кредит
-                    a.button.button--260.contact-button(href="#" data-entrance="from-right" data-entrance-delay="500") Купить
+                        .price-option__buttons
+                            p.price-option__price 65&nbsp;000₽
+                            p.price-option__royalty Роялти 2500₽
+                            a.contact-button.button.button--red.button--w100p(href="#") Купить
+                            br
+                            a.price-option__credit(href="#") Купить в&nbsp;кредит
+
+                    article.price-option.price-option--featured
+                        h3.price-option__title Стандарт
+                        ul.price-option__features
+                            li.price-option__feature Полностью включает пакет Старт
+                            li.price-option__feature.price-option__feature--plus Гарантия получения до&nbsp;4000 целевых подписчиков
+                            li.price-option__feature.price-option__feature--plus Настройка и&nbsp;запуск таргетированной рекламы в&nbsp;Instagram
+                            li.price-option__feature.price-option__feature--plus Ноу–хау по&nbsp;продвижению в&nbsp;ВКонтакте
+                            li.price-option__feature.price-option__feature--plus Каникулы от&nbsp;роялти для&nbsp;второго и&nbsp;третьего месяца работы
+
+                        .price-option__buttons
+                            p.price-option__price 89&nbsp;000₽
+                            p.price-option__royalty Роялти 2500₽
+                            a.contact-button.button.button--w100p(href="#") Купить
+                            br
+                            a.price-option__credit-dark(href="#") Купить в кредит
+
+                    article.price-option
+                        h3.price-option__title Премиум
+                        ul.price-option__features
+                            li.price-option__feature Полностью включает LensVens Старт и&nbsp;Стандарт
+                            li.price-option__feature.price-option__feature--white-plus ВКонтакте под ключ: оформление и&nbsp;ведение группы +&nbsp;1000 покупателей из&nbsp;Вашего города
+                            li.price-option__feature.price-option__feature--white-plus Персональные вебинары и&nbsp;индивидуальное обучение по&nbsp;работе с&nbsp;клиентами и&nbsp;продвижению
+
+                        .price-option__buttons
+                            p.price-option__price 110&nbsp;000₽
+                            p.price-option__royalty Роялти 2500₽
+                            a.contact-button.button.button--red.button--w100p(href="#") Купить
+                            br
+                            a.price-option__credit(href="#") Купить в кредит
+
+                //- p.prices__count <strong>100&nbsp;000</strong> ₽
+
+                //- .prices__buttons
+                //-     a.button.button--260.contact-button(href="#" data-entrance="from-left" data-entrance-delay="100") Купить в кредит
+                //-     a.button.button--260.contact-button(href="#" data-entrance="from-right" data-entrance-delay="500") Купить
 
 
             section.remote

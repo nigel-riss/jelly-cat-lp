@@ -1,0 +1,163 @@
+.price-option {
+  // positioning
+  position: relative;
+
+  // box model
+  margin-bottom: 20px;
+  padding: 40px 25px;
+  flex-basis: 33%;
+
+  // typography
+  color: $light;
+
+  // visual
+  background-color: $diamond;
+
+  // border
+  border-radius: 20px;
+
+  @include atTablet {
+    // box model
+    padding-bottom: 200px;
+  }
+}
+
+.price-option--featured {
+  // typography
+  color: $crimson;
+  font-weight: 500;
+
+  // visual
+  background-color: $light;
+
+  @include atTablet {
+    // positioning
+    top: -10px;
+    z-index: 2;
+
+    // box model
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  @include atDesktopS {
+    // positioning
+    top: -20px;
+  }
+}
+
+.price-option__title {
+  // box model
+  margin: 0;
+  margin-bottom: 2rem;
+
+  // typography
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.price-option__features {
+  // box model
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+
+  // list
+  list-style: none;
+}
+
+.price-option__feature {
+  // positioning
+  position: relative;
+
+  // box model
+  padding-left: 2rem;
+  margin-bottom: 1em;
+
+  // typography
+  font-size: 1.125rem;
+  line-height: 1.5;
+
+  @include atTablet {
+    // typography
+    font-size: 1rem;
+  }
+
+  &::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+
+    // box model
+    height: 1.25rem;
+    width: 1.25rem;
+
+    // visual
+    background-image: url("./img/icons/checked-green.svg");
+    background-size: cover;
+  }
+
+  &--plus {
+    &::before {
+      // visual
+      background-image: url("./img/icons/red-plus.svg");
+    }
+  }
+
+  &--white-plus {
+    &::before {
+      // visual
+      background-image: url("./img/icons/plus-white.svg");
+    }
+  }
+}
+
+.price-option__buttons {
+  // typography
+  text-align: center;
+
+  @include atTablet {
+    // positioning
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+
+    // box model
+    padding: 0 25px;
+    width: 100%;
+  }
+}
+
+.price-option__price {
+  // box model
+  margin-bottom: 0.5rem;
+
+  // typography
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-option__royalty {
+  // box model
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.price-option__buy {
+
+}
+
+.price-option__credit {
+  // typography
+  color: $light;
+}
+
+.price-option__credit-dark:hover,
+.price-option__credit:hover {
+  // typography
+  text-decoration: none;
+}
