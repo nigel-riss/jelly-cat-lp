@@ -99,7 +99,7 @@
                 // });
 
                 function yaLoop() {
-                    if (typeof yaCounter55486057 != 'undefined') {
+                    if (typeof yaCounter55447654 != 'undefined') {
                         yaCounter55447654.reachGoal('zayavka');
                     } else {
                         setTimeout(yaLoop, 1000);
