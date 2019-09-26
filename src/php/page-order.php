@@ -42,8 +42,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
-
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -71,9 +69,10 @@
     </script>
     <!-- /Global site tag (gtag.js) - Google Analytics -->
 
-    <title>Купить франшизу Jelly Cat</title>
-
     <?php wp_head(); ?>
+
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
+    <title>Купить франшизу Jelly Cat</title>
 </head>
 
 <body>

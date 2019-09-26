@@ -12,8 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=2" />
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('stylesheet_directory'); ?>/favicon/apple-touch-icon.png?v=rMJBgWrjnK">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('stylesheet_directory'); ?>/favicon/favicon-32x32.png?v=rMJBgWrjnK">
@@ -31,8 +29,6 @@
     <!-- v-credit.su -->
     <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script>
     <!-- /v-credit.su -->
-
-    <?php wp_head(); ?>
 
     <!-- reCaptcha -->
     <script src="https://www.google.com/recaptcha/api.js?render=6LdCXLkUAAAAAHeruL3pKhlpsPkQ9_FRr64PKI9t"></script>
@@ -71,7 +67,9 @@
     </script>
     <!-- /Global site tag (gtag.js) - Google Analytics -->
 
+    <?php wp_head(); ?>
 
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=3" />
     <title>Купить франшизу Jelly Cat</title>
 </head>
 
