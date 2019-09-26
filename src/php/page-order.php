@@ -93,21 +93,27 @@
             </div>
 
             <script>
-                document.addEventListener('yacounter55447654inited', function() {
-                    yaCounter55447654.reachGoal('zayavka');
-                    // console.log('yandex goal sent');
-                });
+                // legacy
+                // document.addEventListener('yacounter55447654inited', function() {
+                //     yaCounter55447654.reachGoal('zayavka');
+                // });
+
+                function yaLoop() {
+                    if (typeof yaCounter55486057 != 'undefined') {
+                        yaCounter55447654.reachGoal('zayavka');
+                    } else {
+                        setTimeout(yaLoop, 1000);
+                    }
+                };
+                yaLoop();
 
                 function gaLoop() {
                     if (typeof gtag != 'undefined') {
-                        // console.log('google goal sent');
                         gtag('event', 'Заявка', {'event_category': 'submit', 'event_action': 'zayavka'});
                     } else {
-                        // console.log('google waiting');
                         setTimeout(gaLoop, 1000);
                     }
                 };
-
                 gaLoop();
             </script>
             
