@@ -69,7 +69,7 @@
 
     <?php wp_head(); ?>
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=3" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=4" />
     <title>Купить франшизу Jelly Cat</title>
 </head>
 

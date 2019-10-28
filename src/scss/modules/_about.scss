@@ -38,9 +38,13 @@
     background-position: bottom center;
     
     @include atDesktopM {
+        // box model
+        height: 402px;
+        // border: 2px dashed fuchsia;
+
         // visual
         background-image: url('./img/bgs/about-top-l.svg');
-        background-size: 100% 202px;
+        background-size: 100% 402px;
     }
 }
 
