@@ -217,6 +217,75 @@ html(lang="en")
                 .economy__button
                     a.button.contact-button.button--red(href="#") Начать зарабатывать
 
+                .economy__calculator
+                    form#profit-calculator.calculator(action="")
+                        .calculator__row.calculator__row--underlined
+                            .calculator__group
+                                label.calculator__label(for="pc-orders") Количество заказов:
+                                .calculator__input-group
+                                    .calculator__input-deco ₽
+                                    input#pc-orders__input.calculator__input(type="text" value="10" disabled)
+                                input#pc-orders__range.calculator__range(type="range" min="5" max="100" value="10")
+                                .calculator__scale
+                                    span 5
+                                    span 100
+
+                            .calculator__group
+                                label.calculator__label(for="pc-avg-check") Средний чек:
+                                .calculator__input-group
+                                    .calculator__input-deco ₽
+                                    input#pc-avg-check__input.calculator__input(type="text" value="7000" disabled)
+                                input#pc-avg-check__range.calculator__range(type="range" min="4000" max="15000" value="7000" step="500")
+                                .calculator__scale
+                                    span 4&nbsp;000
+                                    span 15&nbsp;000
+
+                        .calculator__row.calculator__row--underlined
+                            .calculator__group
+                                label.calculator__label(for="pc-expences__cost") <small>Средняя себестоимость <br>одной позиции:</small>
+                                .calculator__input-group
+                                    .calculator__input-deco ₽
+                                    input#pc-expences__cost.calculator__input.calculator__input--faded(type="text" value="2500" disabled)
+
+                            .calculator__group
+                                label.calculator__label(for="pc-expences__total-cost") Закуп продукции:
+                                .calculator__input-group
+                                    .calculator__input-deco ₽
+                                    input#pc-expences__total-cost.calculator__input.calculator__input--faded(type="text" value="" disabled)
+
+                            .calculator__group
+                                label.calculator__label(for="pc-expences__social") Продвижение в&nbsp;соцсетях:
+                                .calculator__input-group
+                                    .calculator__input-deco ₽
+                                    input#pc-expences__social.calculator__input.calculator__input--faded(type="text" value="2000" disabled)
+
+                            .calculator__group
+                                label.calculator__label(for="pc-expences__royalty") Роялти:
+                                .calculator__input-group
+                                    .calculator__input-deco ₽
+                                    input#pc-expences__royalty.calculator__input.calculator__input--faded(type="text" value="2500" disabled)
+
+                            .calculator__group
+                                label.calculator__label(for="pc-expences__polygraphy") Визитки и&nbsp;пакеты:
+                                .calculator__input-group
+                                    .calculator__input-deco ₽
+                                    input#pc-expences__polygraphy.calculator__input.calculator__input--faded(type="text" value="1000" disabled)
+
+                        .calculator__row
+                            .calculator__group.calculator__group--total
+                                label.calculator__label(for="pc-income") Выручка:
+                                input#pc-income.calculator__input.calculator__input--total(type="text" disabled)
+
+                            .calculator__group.calculator__group--total
+                                label.calculator__label(for="pc-expences") Расходы:
+                                input#pc-expences.calculator__input.calculator__input--total(type="text" disabled)
+
+                            .calculator__group.calculator__group--total.calculator__group--profit
+                                label.calculator__label(for="pc-profit") Прибыль:
+                                input#pc-profit.calculator__input.calculator__input--total(type="text" disabled)
+
+
+
 
             section.prices
                 .prices__deco

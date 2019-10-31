@@ -1,6 +1,7 @@
 'use strict';
 
 import Rellax from 'rellax';
+import ProfitCalculator from './modules/Calculator';
 
 // Policy popup window
 var policyPopup = document.querySelector('.policy-popup');
@@ -71,3 +72,6 @@ if (window && window.innerWidth > 1000)
     horizontal: false,
   });
 }
+
+// Profit Calculator
+const profitCalculator = new ProfitCalculator();
