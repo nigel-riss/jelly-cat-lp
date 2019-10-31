@@ -245,10 +245,10 @@ html(lang="en")
 
                         .calculator__row.calculator__row--underlined
                             .calculator__group
-                                label.calculator__label(for="pc-expences__cost") <small>Средняя себестоимость <br>одной позиции:</small>
+                                label.calculator__label(for="pc-expences__cost") <small>Средняя себестоимость <br>одного бокса:</small>
                                 .calculator__input-group
                                     .calculator__input-deco ₽
-                                    input#pc-expences__cost.calculator__input.calculator__input--faded(type="text" value="2500" disabled)
+                                    input#pc-expences__cost.calculator__input.calculator__input--faded(type="text" value="600" disabled)
 
                             .calculator__group
                                 label.calculator__label(for="pc-expences__total-cost") Закуп продукции:
@@ -275,11 +275,11 @@ html(lang="en")
                                     input#pc-expences__polygraphy.calculator__input.calculator__input--faded(type="text" value="1000" disabled)
 
                         .calculator__row
-                            .calculator__group.calculator__group--total
+                            .calculator__group.calculator__group--total.calculator__group--minus
                                 label.calculator__label(for="pc-income") Выручка:
                                 input#pc-income.calculator__input.calculator__input--total(type="text" disabled)
 
-                            .calculator__group.calculator__group--total
+                            .calculator__group.calculator__group--total.calculator__group--equal
                                 label.calculator__label(for="pc-expences") Расходы:
                                 input#pc-expences.calculator__input.calculator__input--total(type="text" disabled)
 
