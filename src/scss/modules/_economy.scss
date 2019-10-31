@@ -61,3 +61,29 @@
     // typography
     text-align: center;
 }
+
+.economy__title {
+    // box model
+    padding-top: 6rem;
+
+    // typography
+    text-align: center;
+
+    @include atTablet {
+        // box model
+        padding-top: 12rem;
+    }
+}
+
+.economy__calculator {
+    @include atTablet {
+        // box model
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 0 calc((100% - 1040px) / 2);
+    }
+}
