@@ -1,0 +1,77 @@
+.testimonial {
+  // box model
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+  
+  // typography
+  text-align: left;
+
+  // @include atTablet {
+  //   // box model
+  //   flex-basis: 300px;
+  // }
+
+  @include atDesktopS {
+    // box model
+    margin: 0 1rem;
+    margin-bottom: 4rem;
+    flex-basis: 30%;
+    flex-shrink: 0;
+    flex-grow: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.testimonial__text {
+  // positioning
+  position: relative;
+
+  // typography
+  line-height: 1.75;
+}
+
+.testimonial__text::before {
+  content: "«";
+
+  // positioning
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  z-index: -1;
+
+  // typography
+  color: rgba($purple, 0.5);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.testimonial__text::after {
+  content: "»";
+
+  // positioning
+  position: relative;
+  bottom: 0.75rem;
+  right: 0;
+
+  // typography
+  color: rgba($purple, 0.5);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 0.5rem;
+  vertical-align: bottom;
+}
+
+.testimonial__link {
+  // typography
+  color: $crimson;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.testimonial__link:hover {
+  // typography
+  text-decoration: underline;
+}
