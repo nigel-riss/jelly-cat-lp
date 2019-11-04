@@ -69,7 +69,7 @@
 
     <?php wp_head(); ?>
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=4" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=5" />
     <title>Купить франшизу Jelly Cat</title>
 </head>
 
@@ -292,8 +292,93 @@
 
         <!-- Economy -->
         <section class="economy">
-            <p class="economy__text" data-entrance="from-top" data-entrance-delay="100"><span class="economy__value">до <strong>700&nbsp;000</strong> ₽</span> вы сможете заработать <br>за&nbsp;год, работая с нами</p>
-            <div class="economy__button"><a class="button contact-button button--red" href="#">Начать зарабатывать</a></div>
+            <p class="economy__text" data-entrance="from-top" data-entrance-delay="100"><span class="economy__value">до
+                    <strong>700&nbsp;000</strong> ₽</span> вы сможете заработать за&nbsp;год, <br>работая с нами</p>
+            <div class="economy__button"><a class="button contact-button button--red" href="#">Начать зарабатывать</a>
+            </div>
+            <div class="economy__title">
+                <h2 class="section-title section-title--purple">Калькулятор прибыли</h2>
+            </div>
+            <div class="economy__calculator">
+                <form class="calculator" id="profit-calculator" action="">
+                    <div class="calculator__row calculator__row--underlined">
+                        <div class="calculator__group"><label class="calculator__label" for="pc-orders">Количество
+                                заказов:</label>
+                            <div class="calculator__input-group">
+                                <div class="calculator__input-deco">₽</div><input class="calculator__input"
+                                    id="pc-orders__input" type="text" value="10" disabled="disabled" />
+                            </div><input class="calculator__range" id="pc-orders__range" type="range" min="5" max="100"
+                                value="10" />
+                            <div class="calculator__scale"><span>5</span><span>100</span></div>
+                        </div>
+                        <div class="calculator__group"><label class="calculator__label" for="pc-avg-check">Средний
+                                чек:</label>
+                            <div class="calculator__input-group">
+                                <div class="calculator__input-deco">₽</div><input class="calculator__input"
+                                    id="pc-avg-check__input" type="text" value="7000" disabled="disabled" />
+                            </div><input class="calculator__range" id="pc-avg-check__range" type="range" min="4000"
+                                max="15000" value="7000" step="500" />
+                            <div class="calculator__scale"><span>4&nbsp;000</span><span>15&nbsp;000</span></div>
+                        </div>
+                    </div>
+                    <div class="calculator__row calculator__row--underlined">
+                        <div class="calculator__group"><label class="calculator__label"
+                                for="pc-expences__cost"><small>Средняя себестоимость <br>одного бокса:</small></label>
+                            <div class="calculator__input-group">
+                                <div class="calculator__input-deco">₽</div><input
+                                    class="calculator__input calculator__input--faded" id="pc-expences__cost"
+                                    type="text" value="600" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div class="calculator__group"><label class="calculator__label"
+                                for="pc-expences__total-cost">Закуп продукции:</label>
+                            <div class="calculator__input-group">
+                                <div class="calculator__input-deco">₽</div><input
+                                    class="calculator__input calculator__input--faded" id="pc-expences__total-cost"
+                                    type="text" value="" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div class="calculator__group"><label class="calculator__label"
+                                for="pc-expences__social">Продвижение в&nbsp;соцсетях:</label>
+                            <div class="calculator__input-group">
+                                <div class="calculator__input-deco">₽</div><input
+                                    class="calculator__input calculator__input--faded" id="pc-expences__social"
+                                    type="text" value="2000" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div class="calculator__group"><label class="calculator__label"
+                                for="pc-expences__royalty">Роялти:</label>
+                            <div class="calculator__input-group">
+                                <div class="calculator__input-deco">₽</div><input
+                                    class="calculator__input calculator__input--faded" id="pc-expences__royalty"
+                                    type="text" value="2500" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div class="calculator__group"><label class="calculator__label"
+                                for="pc-expences__polygraphy">Визитки и&nbsp;пакеты:</label>
+                            <div class="calculator__input-group">
+                                <div class="calculator__input-deco">₽</div><input
+                                    class="calculator__input calculator__input--faded" id="pc-expences__polygraphy"
+                                    type="text" value="1000" disabled="disabled" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__row">
+                        <div class="calculator__group calculator__group--total calculator__group--minus"><label
+                                class="calculator__label" for="pc-income">Выручка:</label><input
+                                class="calculator__input calculator__input--total" id="pc-income" type="text"
+                                disabled="disabled" /></div>
+                        <div class="calculator__group calculator__group--total calculator__group--equal"><label
+                                class="calculator__label" for="pc-expences">Расходы:</label><input
+                                class="calculator__input calculator__input--total" id="pc-expences" type="text"
+                                disabled="disabled" /></div>
+                        <div class="calculator__group calculator__group--total calculator__group--profit"><label
+                                class="calculator__label" for="pc-profit">Прибыль:</label><input
+                                class="calculator__input calculator__input--total" id="pc-profit" type="text"
+                                disabled="disabled" /></div>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <!-- Prices -->
@@ -427,6 +512,53 @@
                 </article>
             </div>
         </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <header class="testimonials__header">
+                <h2 class="section-title">Отзывы франчайзи</h2>
+            </header>
+            <div class="testimonials__text">
+                <div class="testimonial">
+                    <p class="testimonial__text">Абсолютно доволен сотрудничеством с франчайзером. Продукт оказался
+                        особенно востребован в социальных сетях, всю необходимую поддержку оказывают.</p><a
+                        class="testimonial__link" href="https://www.instagram.com/Jellycat.sweets/">Jellycat.sweets</a>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial__text">Я просто шокирована тем, что бизнесом можно так просто управлять. Вся
+                        "внутренняя" часть полностью организована франчайзером, я лишь обрабатываю заявки и получаю
+                        деньги практически на руки. Сейчас наняла менеджера, думаю открывать еще один бизнес</p><a
+                        class="testimonial__link"
+                        href="https://www.instagram.com/Jellycat_daintly/">Jellycat_daintly</a>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial__text">Вкусный, яркий, красивый и запоминающийся продукт, который разлетается
+                        как горячие пирожки. Думаю так пирожки не покупают, как в Instagram покупают красивые сладости
+                    </p><a class="testimonial__link"
+                        href="https://www.instagram.com/Jellycat_delicious/">Jellycat_delicious</a>
+                </div>
+            </div>
+            <div class="testimonials__video">
+                <div class="video">
+                    <div class="video__wrapper"><iframe class="video__embed" width="512" height="288"
+                            src="https://www.youtube.com/embed/W3VyrvHSYF4"></iframe></div>
+                </div>
+                <div class="video">
+                    <div class="video__wrapper"><iframe class="video__embed" width="512" height="288"
+                            src="https://www.youtube.com/embed/aY2njbeM2Sc"></iframe></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert -->
+        <section class="expert">
+            <div class="expert__photo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/serj.jpg" alt="Сергей Бунаков" /></div>
+            <div class="expert__caption">
+                <h2 class="expert__name">Сергей Бунаков</h2>
+                <p class="expert__position">Менеджер проекта</p><a class="expert__phone" href="tel:+79097840171">+7 909
+                    784-01-71</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -507,7 +639,7 @@
 
     <?php wp_footer(); ?>
 
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/scripts.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/scripts.js?v=2"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/scroll-entrance.js"></script>
 </body>
 

@@ -1,13 +1,13 @@
 class Calculator {
   constructor() {
     // default values
-    this.ordersCount = 10;
-    this.avgCheck = 7000;
+    this.ordersCount = 20;
+    this.avgCheck = 1800;
     this.income;
-    this.cost = 2500;
+    this.cost = 600;
     this.totalCost;
     this.socialExpences = 2000;
-    this.royalty = 2500;
+    this.royalty = 3000;
     this.polygraphyExpences = 1000;
     this.expences;
     this.profit;

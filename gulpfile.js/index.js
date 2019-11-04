@@ -18,7 +18,8 @@ const dirs = {
   php: './src/php/*.php',
   docs: './docs',
   // wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat',
-  wp: 'F:/xampp/htdocs/jellycat/wp-content/themes/jelly-cat',
+  wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat',
+  // wp: 'F:/xampp/htdocs/jellycat/wp-content/themes/jelly-cat',
 };
 
 
