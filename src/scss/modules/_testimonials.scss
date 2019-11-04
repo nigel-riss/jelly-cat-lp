@@ -24,11 +24,23 @@
 .testimonials__text {
   // box model
   display: flex;
-  // justify-content: space-around;
   flex-wrap: wrap;
-  // align-items: center;
+  margin-bottom: 20px;
+
+  @include atTablet {
+    // box model
+    margin-bottom: 40px;
+  }
 }
 
 .testimonials__video {
+  // box model
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
+  @include atTablet {
+    // box model
+    flex-direction: row;
+  }
 }
