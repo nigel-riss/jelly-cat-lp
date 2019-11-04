@@ -306,19 +306,19 @@
                                 заказов:</label>
                             <div class="calculator__input-group">
                                 <div class="calculator__input-deco">₽</div><input class="calculator__input"
-                                    id="pc-orders__input" type="text" value="10" disabled="disabled" />
+                                    id="pc-orders__input" type="text" value="20" disabled="disabled" />
                             </div><input class="calculator__range" id="pc-orders__range" type="range" min="5" max="100"
-                                value="10" />
+                                value="20" />
                             <div class="calculator__scale"><span>5</span><span>100</span></div>
                         </div>
                         <div class="calculator__group"><label class="calculator__label" for="pc-avg-check">Средний
                                 чек:</label>
                             <div class="calculator__input-group">
                                 <div class="calculator__input-deco">₽</div><input class="calculator__input"
-                                    id="pc-avg-check__input" type="text" value="7000" disabled="disabled" />
-                            </div><input class="calculator__range" id="pc-avg-check__range" type="range" min="4000"
-                                max="15000" value="7000" step="500" />
-                            <div class="calculator__scale"><span>4&nbsp;000</span><span>15&nbsp;000</span></div>
+                                    id="pc-avg-check__input" type="text" value="1800" disabled="disabled" />
+                            </div><input class="calculator__range" id="pc-avg-check__range" type="range" min="1200"
+                                max="2500" value="1800" step="100" />
+                            <div class="calculator__scale"><span>1&nbsp;200</span><span>2&nbsp;500</span></div>
                         </div>
                     </div>
                     <div class="calculator__row calculator__row--underlined">
