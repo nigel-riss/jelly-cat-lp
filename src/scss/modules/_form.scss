@@ -50,13 +50,13 @@
     // box model
     display: block;
     margin-bottom: 20px;
-    padding: 0 30px;
+    padding: 1rem 30px;
     width: 100%;
 
     // typography
     color: $diamond;
     font-size: 1.125rem;
-    line-height: 46px;
+    // line-height: 46px;
 
     // visual
     border: 1px solid rgba($light, 0.75);

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/drsg85/jelly-cat-lp#readme",
   "dependencies": {
+    "rangeslider-pure": "^0.4.11",
     "rellax": "^1.10.0",
     "scroll-entrance": "^1.0.0"
   },

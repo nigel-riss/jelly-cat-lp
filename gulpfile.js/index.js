@@ -18,8 +18,8 @@ const dirs = {
   php: './src/php/*.php',
   docs: './docs',
   // wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat',
-  wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat',
-  // wp: 'F:/xampp/htdocs/jellycat/wp-content/themes/jelly-cat',
+  // wp: 'G:/xampp/htdocs/jelly-cat/wp-content/themes/jelly-cat',
+  wp: 'F:/xampp/htdocs/jellycat/wp-content/themes/jelly-cat',
 };
 
 
@@ -87,6 +87,9 @@ const reloadBrowserSync = (cb) => {
 const renderPug = (cb) => {
   gulp.src(dirs.pug)
     .pipe(pug())
+    .on('error', (error) => {
+      console.log("\x1b[31m", error.message, "\x1b[0m");
+    })
     .pipe(gulp.dest(dirs.docs));
 
   cb();
@@ -101,6 +104,9 @@ const renderPug = (cb) => {
 const compileStyles = (cb) => {
   gulp.src(dirs.styles)
     .pipe(sass())
+    .on('error', (error) => {
+      console.log("\x1b[31m", error.message, "\x1b[0m");
+    })
     .pipe(autoprefixer({
       overrideBrowserslist: [
         "last 2 versions",
@@ -127,6 +133,9 @@ const compileStyles = (cb) => {
 const compileScripts = (cb) => {
   gulp.src(dirs.js)
     .pipe(webpack(webpackConfig))
+    .on('error', (error) => {
+      console.log("\x1b[31m", error.message, "\x1b[0m");
+    })
     .pipe(gulp.dest(dirs.docs))
     .pipe(gulp.dest(dirs.wp));
 

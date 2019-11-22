@@ -2,6 +2,7 @@
 
 import Rellax from 'rellax';
 import ProfitCalculator from './modules/Calculator';
+import RS from 'rangeslider-pure';
 
 // Policy popup window
 var policyPopup = document.querySelector('.policy-popup');
@@ -75,3 +76,8 @@ if (window && window.innerWidth > 1000)
 
 // Profit Calculator
 const profitCalculator = new ProfitCalculator();
+
+const ranges = document.querySelectorAll('.calculator__range');
+RS.create(ranges, {
+  polyfill: true,
+});

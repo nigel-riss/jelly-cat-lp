@@ -22,6 +22,7 @@
     border-radius: 25px;
     box-shadow: 0 5px 20px 0 rgba($dark, 0.3);
     transition: all 0.25s ease-out;
+    cursor: pointer;
 
     @include atTablet {
         // box model
