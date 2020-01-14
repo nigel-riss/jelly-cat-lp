@@ -576,7 +576,7 @@
         <div class="footer__legals">
             <p class="footer__google">Этот сайт защищён reCAPTCHA и&nbsp;Google. <a href="https://policies.google.com/privacy">Политика конфиденциальности</a> и&nbsp;<a href="https://policies.google.com/terms">условия использования</a> применяются.</p>
             <a class="footer__policy" href="#">Политика конфиденциальности</a>
-            <p class="footer__copy">Jelly Cat © 2019</p>
+            <p class="footer__copy">Jelly Cat © 2019 — <?php echo date('Y'); ?></p>
         </div>
     </footer>
 
